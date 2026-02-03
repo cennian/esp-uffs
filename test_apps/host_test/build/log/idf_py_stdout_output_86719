@@ -1,0 +1,575 @@
+[1/357] Generating project_elf_src_linux.c
+[2/357] Building C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/everest.c.o
+[3/357] Building C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/Hacl_Curve25519_joined.c.o
+[4/357] Building C object esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o
+[5/357] Building C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/x25519.c.o
+[6/357] Building C object esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o
+[7/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesce.c.o
+[8/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod.c.o
+[9/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesni.c.o
+[10/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chacha20.c.o
+[11/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/camellia.c.o
+[12/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1write.c.o
+[13/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod_raw.c.o
+[14/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/base64.c.o
+[15/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/block_cipher.c.o
+[16/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chachapoly.c.o
+[17/357] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+*******************************************************************************
+[18/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/dhm.c.o
+[19/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1parse.c.o
+[20/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aria.c.o
+[21/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cmac.c.o
+[22/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/des.c.o
+[23/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_core.c.o
+[24/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/constant_time.c.o
+[25/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ccm.c.o
+[26/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.o
+[27/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecjpake.c.o
+[28/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves_new.c.o
+[29/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher.c.o
+[30/357] cd /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/partition_table && /usr/bin/cmake -E echo "Partition table binary generated. Contents:" && /usr/bin/cmake -E echo "*******************************************************************************" && /home/ihtesham-ullah/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/ihtesham-ullah/esp/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --disable-md5sum -- /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/partition_table/partition-table.bin && /usr/bin/cmake -E echo "*******************************************************************************"
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+*******************************************************************************
+[31/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdh.c.o
+[32/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy_poll.c.o
+[33/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aes.c.o
+[34/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.o
+[35/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy.c.o
+[36/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdsa.c.o
+[37/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hkdf.c.o
+[38/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum.c.o
+[39/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/nist_kw.c.o
+[40/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/error.c.o
+[41/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.o
+[42/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.o
+[43/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lms.c.o
+[44/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.o
+[45/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lmots.c.o
+[46/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md5.c.o
+[47/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_ecc.c.o
+[48/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md.c.o
+[49/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform.c.o
+[50/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/oid.c.o
+[51/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk.c.o
+[52/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pem.c.o
+[53/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/poly1305.c.o
+[54/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/gcm.c.o
+[55/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves.c.o
+[56/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs5.c.o
+[57/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_wrap.c.o
+[58/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform_util.c.o
+[59/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs12.c.o
+[60/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkwrite.c.o
+[61/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_client.c.o
+[62/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_aead.c.o
+[63/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ffdh.c.o
+[64/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkparse.c.o
+[65/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_pake.c.o
+[66/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_se.c.o
+[67/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_driver_wrappers_no_static.c.o
+[68/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ecp.c.o
+[69/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_cipher.c.o
+[70/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ripemd160.c.o
+[71/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_hash.c.o
+[72/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.o
+[73/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_slot_management.c.o
+[74/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_alt_helpers.c.o
+[75/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_mac.c.o
+[76/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_storage.c.o
+[77/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version_features.c.o
+[78/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/threading.c.o
+[79/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ihtesham-ullah/esp/esp-idf/components/mbedtls/port/esp_mem.c.o
+[80/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_util.c.o
+[81/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/timing.c.o
+[82/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_rsa.c.o
+[83/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp.c.o
+[84/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ihtesham-ullah/esp/esp-idf/components/mbedtls/port/esp_timing.c.o
+[85/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version.c.o
+[86/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/ihtesham-ullah/esp/esp-idf/components/mbedtls/port/md/esp_md.c.o
+[87/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha256.c.o
+[88/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha512.c.o
+[89/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.o
+[90/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.o
+[91/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.o
+[92/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa.c.o
+[93/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha3.c.o
+[94/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha1.c.o
+[95/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs7.c.o
+[96/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write.c.o
+[97/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.o
+[98/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.o
+[99/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_reader.c.o
+[100/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_trace.c.o
+[101/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.o
+[102/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_debug_helpers_generated.c.o
+[103/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.o
+[104/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.o
+[105/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_client.c.o
+[106/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.o
+[107/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_client.c.o
+[108/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.o
+[109/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_server.c.o
+[110/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_generic.c.o
+[111/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.o
+[112/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/ihtesham-ullah/esp/esp-idf/components/mbedtls/port/esp_platform_time.c.o
+[113/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/ihtesham-ullah/esp/esp-idf/components/mbedtls/port/mbedtls_debug.c.o
+[114/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.o
+[115/357] Building C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_platform_port.c.o
+[116/357] Building C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp-tls-crypto/esp_tls_crypto.c.o
+[117/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/ihtesham-ullah/esp/esp-idf/components/mbedtls/port/net_sockets.c.o
+[118/357] Building C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_error_capture.c.o
+[119/357] Building C object esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/default_event_loop.c.o
+[120/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.o
+[121/357] Building C object esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/esp_event_private.c.o
+[122/357] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_internal.c.o
+[123/357] Building C object esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/esp_event.c.o
+[124/357] Building C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls.c.o
+[125/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.o
+[126/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_client.c.o
+[127/357] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport.c.o
+[128/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_server.c.o
+[129/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto.c.o
+[130/357] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_socks_proxy.c.o
+[131/357] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ssl.c.o
+[132/357] Building C object esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.o
+[133/357] Building C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_mbedtls.c.o
+[134/357] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/port/linux/pthread.c.o
+[135/357] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_header.c.o
+[136/357] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_utils.c.o
+[137/357] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.o
+[138/357] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_auth.c.o
+[139/357] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ws.c.o
+[140/357] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_handlers.c.o
+[141/357] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_defaults.c.o
+[142/357] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/util/ctrl_sock.c.o
+[143/357] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_objects.c.o
+[144/357] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_sess.c.o
+[145/357] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_txrx.c.o
+[146/357] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_uri.c.o
+[147/357] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_ws.c.o
+[148/357] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_main.c.o
+[149/357] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/loopback/esp_netif_loopback.c.o
+[150/357] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_parse.c.o
+[151/357] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/esp_http_client.c.o
+[152/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_platform.cpp.o
+[153/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition.cpp.o
+[154/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_lookup.cpp.o
+[155/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_cxx_api.cpp.o
+[156/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_handle_simple.cpp.o
+[157/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_pagemanager.cpp.o
+[158/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_types.cpp.o
+[159/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_manager.cpp.o
+[160/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_item_hash_list.cpp.o
+[161/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_page.cpp.o
+[162/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_handle_locked.cpp.o
+[163/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_api.cpp.o
+[164/357] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_storage.cpp.o
+[165/357] Linking C static library esp-idf/nvs_flash/libnvs_flash.a
+[166/357] Linking C static library esp-idf/esp_netif/libesp_netif.a
+[167/357] Linking C static library esp-idf/esp_http_server/libesp_http_server.a
+[168/357] Linking C static library esp-idf/pthread/libpthread.a
+[169/357] Linking C static library esp-idf/esp_http_client/libesp_http_client.a
+[170/357] Linking C static library esp-idf/tcp_transport/libtcp_transport.a
+[171/357] Linking C static library esp-idf/esp_event/libesp_event.a
+[172/357] Linking C static library esp-idf/esp-tls/libesp-tls.a
+[173/357] Linking C static library esp-idf/http_parser/libhttp_parser.a
+[174/357] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedtls.a
+[175/357] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedx509.a
+[176/357] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
+[177/357] Linking CXX static library esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
+[178/357] Linking CXX static library esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
+[179/357] Generating x509_crt_bundle
+[180/357] Generating ../../x509_crt_bundle.S
+[181/357] Building C object CMakeFiles/test_host_uffs.elf.dir/project_elf_src_linux.c.o
+[182/357] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/linux/cache_utils.c.o
+[183/357] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_linux.c.o
+[184/357] Building C object esp-idf/linux/CMakeFiles/__idf_linux.dir/fls.c.o
+[185/357] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/linux/spi_flash_linux.c.o
+[186/357] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/linux/flash_mmap.c.o
+[187/357] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.o
+[188/357] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.o
+[189/357] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/linux/reset_reason.c.o
+[190/357] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/linux/system_internal.c.o
+[191/357] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/linux/esp_rom_efuse.c.o
+[192/357] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.o
+[193/357] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/linux/esp_rom_sys.c.o
+[194/357] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/linux/esp_rom_crc.c.o
+[195/357] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.o
+[196/357] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.o
+[197/357] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/linux/efuse_hal.c.o
+[198/357] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/linux/esp_rom_md5.c.o
+[199/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/log_level.c.o
+[200/357] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.o
+[201/357] Building C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.o
+[202/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_write.c.o
+[203/357] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.o
+[204/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/linux/log_timestamp.c.o
+[205/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/linux/log_lock.c.o
+[206/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.o
+[207/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.o
+[208/357] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/linux/chip_info.c.o
+[209/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/tag_log_level.c.o
+[210/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.o
+[211/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/linked_list/log_linked_list.c.o
+[212/357] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/linux/esp_random.c.o
+[213/357] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_linux.c.o
+[214/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/list.c.o
+[215/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/heap_idf.c.o
+[216/357] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/cache/log_binary_heap.c.o
+[217/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/linux/utils/wait_for_event.c.o
+[218/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/freertos_compatibility.c.o
+[219/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/idf_additions_event_groups.c.o
+[220/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/timers.c.o
+[221/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/FreeRTOSSimulator_wrappers.c.o
+[222/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/event_groups.c.o
+[223/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/linux/port_idf.c.o
+[224/357] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_compat.c.o
+[225/357] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_memory.c.o
+[226/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/idf_additions.c.o
+[227/357] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/port/linux/unity_utils_memory_linux.c.o
+[228/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/linux/port.c.o
+[229/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/split_argv.c.o
+[230/357] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_port_linux.c.o
+[231/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_common.c.o
+[232/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/queue.c.o
+[233/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl_linux.c.o
+[234/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/stream_buffer.c.o
+[235/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dbl.c.o
+[236/357] Building C object esp-idf/cmock/CMakeFiles/__idf_cmock.dir/CMock/src/cmock.c.o
+[237/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_date.c.o
+[238/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_end.c.o
+[239/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/commands.c.o
+[240/357] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/tasks.c.o
+[241/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dstr.c.o
+[242/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_int.c.o
+[243/357] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_runner.c.o
+[244/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_cmd.c.o
+[245/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_lit.c.o
+[246/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_str.c.o
+[247/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rem.c.o
+[248/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_file.c.o
+[249/357] Building C object esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/ringbuf.c.o
+[250/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_hashtable.c.o
+[251/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/linenoise/linenoise.c.o
+[252/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_utils.c.o
+[253/357] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity/src/unity.c.o
+[254/357] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mock_spi_master.c.o
+[255/357] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/linux/esp_efuse_table.c.o
+[256/357] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/linux/esp_efuse_fields.c.o
+[257/357] Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.o
+[258/357] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_startup.c.o
+[259/357] Building ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.o
+[260/357] Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_linux.c.o
+[261/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rex.c.o
+[262/357] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.o
+[263/357] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.o
+[264/357] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp_share_ctrl.c.o
+[265/357] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/argtable3.c.o
+[266/357] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.o
+[267/357] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.o
+[268/357] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/linux/esp_efuse_utility.c.o
+[269/357] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/Partition.cpp.o
+[270/357] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/esp_cam_ctlr.c.o
+[271/357] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/crc32.cpp.o
+[272/357] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.o
+[273/357] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/SPI_Flash.cpp.o
+[274/357] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Perf.cpp.o
+[275/357] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.o
+[276/357] Building C object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.o
+[277/357] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/linux/ffsystem.c.o
+[278/357] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.o
+[279/357] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Safe.cpp.o
+[280/357] Linking C static library esp-idf/mbedtls/libmbedtls.a
+[281/357] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.o
+[282/357] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/wear_levelling.cpp.o
+[283/357] Linking C static library esp-idf/efuse/libefuse.a
+[284/357] Linking C static library esp-idf/esp_partition/libesp_partition.a
+[285/357] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.o
+[286/357] Linking C static library esp-idf/freertos/libfreertos.a
+[287/357] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.o
+[288/357] Linking C static library esp-idf/esp_hw_support/libesp_hw_support.a
+[289/357] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.o
+[290/357] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Flash.cpp.o
+[291/357] Linking C static library esp-idf/heap/libheap.a
+[292/357] Building C object esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/src/https_server.c.o
+[293/357] Building C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON_Utils.c.o
+[294/357] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.o
+[295/357] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.o
+[296/357] Linking C static library esp-idf/log/liblog.a
+[297/357] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.o
+[298/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_crc.c.o
+[299/357] Linking C static library esp-idf/hal/libhal.a
+[300/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_badblock.c.o
+[301/357] Linking C static library esp-idf/esp_rom/libesp_rom.a
+[302/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_blockinfo.c.o
+[303/357] Linking C static library esp-idf/esp_common/libesp_common.a
+[304/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_device.c.o
+[305/357] Linking C static library esp-idf/esp_system/libesp_system.a
+[306/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_debug.c.o
+[307/357] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.o
+[308/357] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.o
+[309/357] Linking C static library esp-idf/spi_flash/libspi_flash.a
+[310/357] Linking C static library esp-idf/linux/liblinux.a
+[311/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_ecc.c.o
+[312/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_find.c.o
+[313/357] Linking C static library esp-idf/unity/libunity.a
+[314/357] Linking C static library esp-idf/esp_ringbuf/libesp_ringbuf.a
+[315/357] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.o
+[316/357] Building C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON.c.o
+[317/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_init.c.o
+[318/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_fd.c.o
+[319/357] Linking C static library esp-idf/driver/libdriver.a
+[320/357] Linking C static library esp-idf/console/libconsole.a
+[321/357] Linking C static library esp-idf/cmock/libcmock.a
+[322/357] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[323/357] Linking C static library esp-idf/esp_https_server/libesp_https_server.a
+[324/357] Linking C static library esp-idf/esp_driver_cam/libesp_driver_cam.a
+[325/357] Linking C static library esp-idf/wear_levelling/libwear_levelling.a
+[326/357] Linking C static library esp-idf/json/libjson.a
+[327/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_flash.c.o
+[328/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_mem.c.o
+[329/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_buf.c.o
+[330/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_pool.c.o
+[331/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_mtb.c.o
+[332/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_version.c.o
+[333/357] Building C object esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.o
+[334/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_public.c.o
+[335/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_fs.c.o
+[336/357] Linking C static library esp-idf/protobuf-c/libprotobuf-c.a
+[337/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_utils.c.o
+[338/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/src/uffs_tree.c.o
+[339/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_xtx.c.o
+In file included from /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c:2:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:57:44: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   57 | int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                            ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:45: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                             ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:67:46: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 | int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
+      |                                              ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c: In function ‘uffs_xtx_write_page_with_layout’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c:45:43: warning: passing argument 1 of ‘uffs_spi_nand_write_page_generic’ from incompatible pointer type [-Wincompatible-pointer-types]
+   45 |   return uffs_spi_nand_write_page_generic(dev, block, page, data, data_len,
+      |                                           ^~~
+      |                                           |
+      |                                           struct uffs_DeviceSt *
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:60: note: expected ‘struct uffs_DeviceSt *’ but argument is of type ‘struct uffs_DeviceSt *’
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c: In function ‘uffs_spi_nand_init_xtx’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c:81:17: warning: assignment to ‘int (*)(uffs_Device *, u32,  u32,  u8 *, int,  u8 *, u8 *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  unsigned char *, int,  unsigned char *, unsigned char *, int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t,  uint32_t,  uint8_t *, int,  uint8_t *, uint8_t *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  unsigned char *, int,  unsigned char *, unsigned char *, int)’} [-Wincompatible-pointer-types]
+   81 |   ops->ReadPage = uffs_spi_nand_read_page_generic;
+      |                 ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c:82:18: warning: assignment to ‘int (*)(uffs_Device *, u32,  u32,  const u8 *, int,  const u8 *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t,  uint32_t,  const uint8_t *, int,  const uint8_t *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} [-Wincompatible-pointer-types]
+   82 |   ops->WritePage = uffs_spi_nand_write_page_generic;
+      |                  ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c:84:19: warning: assignment to ‘int (*)(uffs_Device *, u32)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} [-Wincompatible-pointer-types]
+   84 |   ops->EraseBlock = uffs_spi_nand_erase_block_generic;
+      |                   ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c: At top level:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c:6:20: warning: ‘TAG’ defined but not used [-Wunused-variable]
+    6 | static const char *TAG = "uffs_xtx";
+      |                    ^~~
+[340/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_winbond.c.o
+In file included from /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c:2:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:57:44: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   57 | int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                            ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:45: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                             ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:67:46: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 | int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
+      |                                              ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c: In function ‘uffs_winbond_write_page_with_layout’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c:40:43: warning: passing argument 1 of ‘uffs_spi_nand_write_page_generic’ from incompatible pointer type [-Wincompatible-pointer-types]
+   40 |   return uffs_spi_nand_write_page_generic(dev, block, page, data, data_len,
+      |                                           ^~~
+      |                                           |
+      |                                           struct uffs_DeviceSt *
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:60: note: expected ‘struct uffs_DeviceSt *’ but argument is of type ‘struct uffs_DeviceSt *’
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c: In function ‘uffs_spi_nand_init_winbond’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c:80:17: warning: assignment to ‘int (*)(uffs_Device *, u32,  u32,  u8 *, int,  u8 *, u8 *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  unsigned char *, int,  unsigned char *, unsigned char *, int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t,  uint32_t,  uint8_t *, int,  uint8_t *, uint8_t *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  unsigned char *, int,  unsigned char *, unsigned char *, int)’} [-Wincompatible-pointer-types]
+   80 |   ops->ReadPage = uffs_spi_nand_read_page_generic;
+      |                 ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c:81:18: warning: assignment to ‘int (*)(uffs_Device *, u32,  u32,  const u8 *, int,  const u8 *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t,  uint32_t,  const uint8_t *, int,  const uint8_t *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} [-Wincompatible-pointer-types]
+   81 |   ops->WritePage = uffs_spi_nand_write_page_generic;
+      |                  ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c:83:19: warning: assignment to ‘int (*)(uffs_Device *, u32)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} [-Wincompatible-pointer-types]
+   83 |   ops->EraseBlock = uffs_spi_nand_erase_block_generic;
+      |                   ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c: At top level:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c:6:20: warning: ‘TAG’ defined but not used [-Wunused-variable]
+    6 | static const char *TAG = "uffs_winbond";
+      |                    ^~~
+[341/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_common.c.o
+FAILED: esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_common.c.o 
+/usr/bin/cc -DESP_PLATFORM -DIDF_VER=\"v5.4-dev-3602-ga97a7b0962\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -DprojCOVERAGE_TEST=0 -I/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/config -I/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/include -I/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/config/include -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/config/include/freertos -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/config/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/linux/include/freertos -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/esp_additions/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/include -I/home/ihtesham-ullah/esp/esp-idf/components/heap/include -I/home/ihtesham-ullah/esp/esp-idf/components/log/include -I/home/ihtesham-ullah/esp/esp-idf/components/soc/include -I/home/ihtesham-ullah/esp/esp-idf/components/soc/linux -I/home/ihtesham-ullah/esp/esp-idf/components/soc/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/hal/platform_port/include -I/home/ihtesham-ullah/esp/esp-idf/components/hal/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/hal/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux/include/linux -I/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux -I/home/ihtesham-ullah/esp/esp-idf/components/esp_common/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_system/include -I/home/ihtesham-ullah/esp/esp-idf/components/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/linux/linux_include -I/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/include -I/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/driver/include -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test=. -fmacro-prefix-map=/home/ihtesham-ullah/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_common.c.o -MF esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_common.c.o.d -o esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_common.c.o -c /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.c
+In file included from /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.c:1:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:57:44: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   57 | int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                            ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:45: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                             ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:67:46: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 | int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
+      |                                              ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.c:63:5: error: conflicting types for ‘uffs_spi_nand_read_page_generic’; have ‘int(struct uffs_DeviceSt *, uint32_t,  uint32_t,  uint8_t *, int,  uint8_t *, uint8_t *, int)’ {aka ‘int(struct uffs_DeviceSt *, unsigned int,  unsigned int,  unsigned char *, int,  unsigned char *, unsigned char *, int)’}
+   63 | int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:57:5: note: previous declaration of ‘uffs_spi_nand_read_page_generic’ with type ‘int(struct uffs_DeviceSt *, uint32_t,  uint32_t,  uint8_t *, int,  uint8_t *, uint8_t *, int)’ {aka ‘int(struct uffs_DeviceSt *, unsigned int,  unsigned int,  unsigned char *, int,  unsigned char *, unsigned char *, int)’}
+   57 | int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.c:126:5: error: conflicting types for ‘uffs_spi_nand_write_page_generic’; have ‘int(struct uffs_DeviceSt *, uint32_t,  uint32_t,  const uint8_t *, int,  const uint8_t *, int)’ {aka ‘int(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’}
+  126 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:5: note: previous declaration of ‘uffs_spi_nand_write_page_generic’ with type ‘int(struct uffs_DeviceSt *, uint32_t,  uint32_t,  const uint8_t *, int,  const uint8_t *, int)’ {aka ‘int(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’}
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.c:205:5: error: conflicting types for ‘uffs_spi_nand_erase_block_generic’; have ‘int(struct uffs_DeviceSt *, uint32_t)’ {aka ‘int(struct uffs_DeviceSt *, unsigned int)’}
+  205 | int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:67:5: note: previous declaration of ‘uffs_spi_nand_erase_block_generic’ with type ‘int(struct uffs_DeviceSt *, uint32_t)’ {aka ‘int(struct uffs_DeviceSt *, unsigned int)’}
+   67 | int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[342/357] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.o
+[343/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/uffs_port.c.o
+[344/357] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.o
+[345/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_micron.c.o
+In file included from /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_micron.c:2:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:57:44: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   57 | int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                            ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:45: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                             ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:67:46: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 | int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
+      |                                              ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_micron.c: In function ‘uffs_micron_write_page_with_layout’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_micron.c:117:43: warning: passing argument 1 of ‘uffs_spi_nand_write_page_generic’ from incompatible pointer type [-Wincompatible-pointer-types]
+  117 |   return uffs_spi_nand_write_page_generic(dev, block, page, data, data_len,
+      |                                           ^~~
+      |                                           |
+      |                                           struct uffs_DeviceSt *
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:60: note: expected ‘struct uffs_DeviceSt *’ but argument is of type ‘struct uffs_DeviceSt *’
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_micron.c: In function ‘uffs_spi_nand_init_micron’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_micron.c:154:18: warning: assignment to ‘int (*)(uffs_Device *, u32,  u32,  const u8 *, int,  const u8 *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t,  uint32_t,  const uint8_t *, int,  const uint8_t *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} [-Wincompatible-pointer-types]
+  154 |   ops->WritePage = uffs_spi_nand_write_page_generic;
+      |                  ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_micron.c:156:19: warning: assignment to ‘int (*)(uffs_Device *, u32)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} [-Wincompatible-pointer-types]
+  156 |   ops->EraseBlock = uffs_spi_nand_erase_block_generic;
+      |                   ^
+[346/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_zetta.c.o
+In file included from /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_zetta.c:2:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:57:44: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   57 | int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                            ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:45: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                             ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:67:46: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 | int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
+      |                                              ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_zetta.c: In function ‘uffs_zetta_write_page_with_layout’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_zetta.c:107:43: warning: passing argument 1 of ‘uffs_spi_nand_write_page_generic’ from incompatible pointer type [-Wincompatible-pointer-types]
+  107 |   return uffs_spi_nand_write_page_generic(dev, block, page, data, data_len,
+      |                                           ^~~
+      |                                           |
+      |                                           struct uffs_DeviceSt *
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:60: note: expected ‘struct uffs_DeviceSt *’ but argument is of type ‘struct uffs_DeviceSt *’
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_zetta.c: In function ‘uffs_spi_nand_init_zetta’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_zetta.c:144:18: warning: assignment to ‘int (*)(uffs_Device *, u32,  u32,  const u8 *, int,  const u8 *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t,  uint32_t,  const uint8_t *, int,  const uint8_t *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} [-Wincompatible-pointer-types]
+  144 |   ops->WritePage = uffs_spi_nand_write_page_generic;
+      |                  ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_zetta.c:146:19: warning: assignment to ‘int (*)(uffs_Device *, u32)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} [-Wincompatible-pointer-types]
+  146 |   ops->EraseBlock = uffs_spi_nand_erase_block_generic;
+      |                   ^
+[347/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand.c.o
+[348/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_gd.c.o
+In file included from /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_gd.c:2:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:57:44: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   57 | int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                            ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:45: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                             ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:67:46: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 | int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
+      |                                              ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_gd.c: In function ‘uffs_gd_write_page_with_layout’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_gd.c:101:43: warning: passing argument 1 of ‘uffs_spi_nand_write_page_generic’ from incompatible pointer type [-Wincompatible-pointer-types]
+  101 |   return uffs_spi_nand_write_page_generic(dev, block, page, data, data_len,
+      |                                           ^~~
+      |                                           |
+      |                                           struct uffs_DeviceSt *
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:60: note: expected ‘struct uffs_DeviceSt *’ but argument is of type ‘struct uffs_DeviceSt *’
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_gd.c: In function ‘uffs_spi_nand_init_gd’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_gd.c:140:18: warning: assignment to ‘int (*)(uffs_Device *, u32,  u32,  const u8 *, int,  const u8 *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t,  uint32_t,  const uint8_t *, int,  const uint8_t *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} [-Wincompatible-pointer-types]
+  140 |   ops->WritePage = uffs_spi_nand_write_page_generic;
+      |                  ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_gd.c:142:19: warning: assignment to ‘int (*)(uffs_Device *, u32)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} [-Wincompatible-pointer-types]
+  142 |   ops->EraseBlock = uffs_spi_nand_erase_block_generic;
+      |                   ^
+[349/357] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand_alliance.c.o
+In file included from /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c:2:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:57:44: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   57 | int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                            ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:45: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                             ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:67:46: warning: ‘struct uffs_DeviceSt’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 | int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
+      |                                              ^~~~~~~~~~~~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c: In function ‘uffs_alliance_write_page_with_layout’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c:68:43: warning: passing argument 1 of ‘uffs_spi_nand_write_page_generic’ from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |   return uffs_spi_nand_write_page_generic(dev, block, page, data, data_len,
+      |                                           ^~~
+      |                                           |
+      |                                           struct uffs_DeviceSt *
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.h:62:60: note: expected ‘struct uffs_DeviceSt *’ but argument is of type ‘struct uffs_DeviceSt *’
+   62 | int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c: In function ‘uffs_spi_nand_init_alliance’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c:104:17: warning: assignment to ‘int (*)(uffs_Device *, u32,  u32,  u8 *, int,  u8 *, u8 *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  unsigned char *, int,  unsigned char *, unsigned char *, int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t,  uint32_t,  uint8_t *, int,  uint8_t *, uint8_t *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  unsigned char *, int,  unsigned char *, unsigned char *, int)’} [-Wincompatible-pointer-types]
+  104 |   ops->ReadPage =
+      |                 ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c:107:18: warning: assignment to ‘int (*)(uffs_Device *, u32,  u32,  const u8 *, int,  const u8 *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t,  uint32_t,  const uint8_t *, int,  const uint8_t *, int)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int,  unsigned int,  const unsigned char *, int,  const unsigned char *, int)’} [-Wincompatible-pointer-types]
+  107 |   ops->WritePage = uffs_spi_nand_write_page_generic;
+      |                  ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c:109:19: warning: assignment to ‘int (*)(uffs_Device *, u32)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} from incompatible pointer type ‘int (*)(struct uffs_DeviceSt *, uint32_t)’ {aka ‘int (*)(struct uffs_DeviceSt *, unsigned int)’} [-Wincompatible-pointer-types]
+  109 |   ops->EraseBlock = uffs_spi_nand_erase_block_generic;
+      |                   ^
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c: At top level:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c:6:20: warning: ‘TAG’ defined but not used [-Wunused-variable]
+    6 | static const char *TAG = "uffs_alliance";
+      |                    ^~~
+[350/357] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.o
+[351/357] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/test_host_main.c.o
+ninja: build stopped: subcommand failed.

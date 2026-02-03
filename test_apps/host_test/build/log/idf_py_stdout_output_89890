@@ -1,0 +1,31 @@
+[1/4] Building C object esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand.c.o
+FAILED: esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand.c.o 
+/usr/bin/cc -DESP_PLATFORM -DIDF_VER=\"v5.4-dev-3602-ga97a7b0962\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -DprojCOVERAGE_TEST=0 -I/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/config -I/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/include -I/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/config/include -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/config/include/freertos -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/config/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/linux/include/freertos -I/home/ihtesham-ullah/esp/esp-idf/components/freertos/esp_additions/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/include -I/home/ihtesham-ullah/esp/esp-idf/components/heap/include -I/home/ihtesham-ullah/esp/esp-idf/components/log/include -I/home/ihtesham-ullah/esp/esp-idf/components/soc/include -I/home/ihtesham-ullah/esp/esp-idf/components/soc/linux -I/home/ihtesham-ullah/esp/esp-idf/components/soc/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/hal/platform_port/include -I/home/ihtesham-ullah/esp/esp-idf/components/hal/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/hal/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux/include/linux -I/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux -I/home/ihtesham-ullah/esp/esp-idf/components/esp_common/include -I/home/ihtesham-ullah/esp/esp-idf/components/esp_system/include -I/home/ihtesham-ullah/esp/esp-idf/components/linux/include -I/home/ihtesham-ullah/esp/esp-idf/components/linux/linux_include -I/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/include -I/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/driver/include -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test=. -fmacro-prefix-map=/home/ihtesham-ullah/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand.c.o -MF esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand.c.o.d -o esp-idf/uffs/CMakeFiles/__idf_uffs.dir/port/esp_spi_nand.c.o -c /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand.c
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand.c: In function ‘esp_uffs_spi_nand_init’:
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand.c:98:17: error: ‘uffs_spi_nand_device_init’ undeclared (first use in this function); did you mean ‘uffs_spi_nand_init_xtx’?
+   98 |     dev->Init = uffs_spi_nand_device_init;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 uffs_spi_nand_init_xtx
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand.c:98:17: note: each undeclared identifier is reported only once for each function it appears in
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand.c:99:20: error: ‘uffs_spi_nand_device_release’ undeclared (first use in this function); did you mean ‘uffs_spi_nand_init_zetta’?
+   99 |     dev->Release = uffs_spi_nand_device_release;
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                    uffs_spi_nand_init_zetta
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand.c:100:23: error: ‘uffs_spi_nand_malloc’ undeclared (first use in this function); did you mean ‘uffs_spi_nand_init_gd’?
+  100 |     dev->mem.malloc = uffs_spi_nand_malloc;
+      |                       ^~~~~~~~~~~~~~~~~~~~
+      |                       uffs_spi_nand_init_gd
+/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand.c:101:21: error: ‘uffs_spi_nand_free’ undeclared (first use in this function); did you mean ‘uffs_spi_nand_init_gd’?
+  101 |     dev->mem.free = uffs_spi_nand_free;
+      |                     ^~~~~~~~~~~~~~~~~~
+      |                     uffs_spi_nand_init_gd
+[2/4] cd /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/partition_table && /usr/bin/cmake -E echo "Partition table binary generated. Contents:" && /usr/bin/cmake -E echo "*******************************************************************************" && /home/ihtesham-ullah/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/ihtesham-ullah/esp/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --disable-md5sum -- /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/partition_table/partition-table.bin && /usr/bin/cmake -E echo "*******************************************************************************"
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+*******************************************************************************
+ninja: build stopped: subcommand failed.

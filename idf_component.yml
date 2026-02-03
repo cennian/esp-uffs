@@ -1,0 +1,24 @@
+version: "0.1.0"
+description: "Ultra-low-cost Flash File System (UFFS) port for ESP-IDF, supporting SPI NAND flash."
+url: "https://github.com/rickyzheng/uffs"
+maintainers:
+  - "Antigravity <antigravity@example.com>"
+display_name: "ESP-UFFS"
+tags:
+  - filesystem
+  - storage
+  - nand
+  - spi
+  - uffs
+  - flash
+targets:
+  - esp32
+  - esp32s2
+  - esp32s3
+  - esp32c3
+  - esp32c2
+  - esp32c6
+  - esp32h2
+  - esp32p4
+dependencies:
+  idf: ">=5.0"
