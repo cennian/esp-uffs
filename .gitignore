@@ -1,0 +1,12 @@
+# ESP-IDF build folders
+build/
+sdkconfig
+sdkconfig.old
+
+# IDE caching
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -185,3 +185,16 @@ This project is a port of the excellent **UFFS (Ultra-low-cost Flash File System
 *   **Author**: Ricky Zheng
 
 We appreciate the work done by the UFFS community in creating a robust filesystem for raw flash.
+
+## License
+
+This component is provided under a **mixed license**:
+
+1.  **UFFS Core** (`src/`, `include/uffs/`):
+    *   Copyright (C) 2005-2009 Ricky Zheng
+    *   Licensed under **LGPL-2.0-or-later** (GNU Library General Public License).
+    *   *Note*: The library includes a special exception allowing linking without infecting the application license.
+
+2.  **ESP-IDF Port** (`port/`, `include/esp_spi_nand.h`):
+    *   Copyright (C) 2024 Ihtesham Ullah
+    *   Licensed under **Apache-2.0**.

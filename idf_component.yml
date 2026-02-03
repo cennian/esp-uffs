@@ -2,7 +2,8 @@ version: "0.1.0"
 description: "Ultra-low-cost Flash File System (UFFS) port for ESP-IDF, supporting SPI NAND flash."
 url: "https://github.com/rickyzheng/uffs"
 maintainers:
-  - "Antigravity <antigravity@example.com>"
+  - "Ihtesham Ullah <ihtesham@example.com>"
+license: "LGPL-2.0-or-later"
 display_name: "ESP-UFFS"
 tags:
   - filesystem
