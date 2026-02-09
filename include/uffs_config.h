@@ -45,13 +45,16 @@
  * \def UFFS_MAX_PAGE_SIZE
  * \note maximum page size UFFS support
  */
-#define UFFS_MAX_PAGE_SIZE 4096 /* Increased to 4096 for modern NANDs */
+#ifdef CONFIG_UFFS_MAX_PAGE_SIZE
+#define UFFS_MAX_PAGE_SIZE CONFIG_UFFS_MAX_PAGE_SIZE
+#else
+#define UFFS_MAX_PAGE_SIZE 4096 /* Default if Kconfig not present */
+#endif
 
 /**
  * \def UFFS_MAX_SPARE_SIZE
  */
-#define UFFS_MAX_SPARE_SIZE                                                    \
-  ((UFFS_MAX_PAGE_SIZE / 256) * 16) /* Increased spare ratio */
+#define UFFS_MAX_SPARE_SIZE ((UFFS_MAX_PAGE_SIZE / 256) * 16)
 
 /**
  * \def UFFS_MAX_ECC_SIZE
@@ -60,107 +63,97 @@
 
 /**
  * \def MAX_CACHED_BLOCK_INFO
- * \note uffs cache the block info for opened directories and files,
- *       a practical value is 5 ~ MAX_OBJECT_HANDLE
  */
-#define MAX_CACHED_BLOCK_INFO 1200
+#ifdef CONFIG_UFFS_MAX_CACHED_BLOCK_INFO
+#define MAX_CACHED_BLOCK_INFO CONFIG_UFFS_MAX_CACHED_BLOCK_INFO
+#else
+#define MAX_CACHED_BLOCK_INFO 128
+#endif
 
 /**
  * \def MAX_PAGE_BUFFERS
- * \note the bigger value will bring better read/write performance.
- *       but few writing performance will be improved when this
- *       value is become larger than 'max pages per block'
  */
-#define MAX_PAGE_BUFFERS                                                       \
-  40 /* Adjusted for ESP32 RAM constraints, can be increased if external RAM   \
-        used */
+#ifdef CONFIG_UFFS_MAX_PAGE_BUFFERS
+#define MAX_PAGE_BUFFERS CONFIG_UFFS_MAX_PAGE_BUFFERS
+#else
+#define MAX_PAGE_BUFFERS 40
+#endif
 
 /**
  * \def CLONE_BUFFER_THRESHOLD
- * \note reserve buffers for clone. 1 or 2 (when CONFIG_PAGE_WRITE_VERIFY is
- * enabled).
  */
+#ifdef CONFIG_UFFS_CLONE_BUFFERS_THRESHOLD
+#define CLONE_BUFFERS_THRESHOLD CONFIG_UFFS_CLONE_BUFFERS_THRESHOLD
+#else
 #define CLONE_BUFFERS_THRESHOLD 2
+#endif
 
 /**
  * \def MAX_SPARE_BUFFERS
- * \note spare buffers are used for lower level flash operations,
- *		 5 should be enough.
  */
+#ifdef CONFIG_UFFS_MAX_SPARE_BUFFERS
+#define MAX_SPARE_BUFFERS CONFIG_UFFS_MAX_SPARE_BUFFERS
+#else
 #define MAX_SPARE_BUFFERS 5
+#endif
 
 /**
  * \def CONFIG_MAX_PENDING_BLOCKS
- * \note When a new bad block or ECC error is discovered during reading flash,
- *       the block will be put in a 'pending' list and will be processed later.
- *       This config the maximum pending blocks before being processed, 4 should
- *       be enough.
  */
+#ifdef CONFIG_UFFS_MAX_PENDING_BLOCKS
+#define CONFIG_MAX_PENDING_BLOCKS CONFIG_UFFS_MAX_PENDING_BLOCKS
+#else
 #define CONFIG_MAX_PENDING_BLOCKS 4
+#endif
 
 /**
  * \def MAX_DIRTY_PAGES_IN_A_BLOCK
- * \note this value should be between '2' and the lesser of
- *		 'max pages per block' and (MAX_PAGE_BUFFERS -
- * CLONE_BUFFERS_THRESHOLD - 1).
- *
- *       the smaller the value the frequently the buffer will be flushed.
  */
-#define MAX_DIRTY_PAGES_IN_A_BLOCK 10 /* Lowered to match MAX_PAGE_BUFFERS */
+#ifdef CONFIG_UFFS_MAX_DIRTY_PAGES_IN_A_BLOCK
+#define MAX_DIRTY_PAGES_IN_A_BLOCK CONFIG_UFFS_MAX_DIRTY_PAGES_IN_A_BLOCK
+#else
+#define MAX_DIRTY_PAGES_IN_A_BLOCK 10
+#endif
 
 /**
  * \def CONFIG_ENABLE_UFFS_DEBUG_MSG
- * \note Enable debug message output. You must call
- * uffs_InitDebugMessageOutput() to initialize debug apart from enable debug
- * feature.
  */
+#ifdef CONFIG_UFFS_ENABLE_DEBUG_MSG
 #define CONFIG_ENABLE_UFFS_DEBUG_MSG
+#endif
 
 /**
  * \def CONFIG_USE_GLOBAL_FS_LOCK
- * \note use global lock instead of per-device lock.
- *       this is required if you use fd APIs in multi-thread environment.
  */
+#ifdef CONFIG_UFFS_USE_GLOBAL_FS_LOCK
 #define CONFIG_USE_GLOBAL_FS_LOCK
+#endif
 
 /**
  * \def CONFIG_USE_PER_DEVICE_LOCK
- * \note use per-device lock.
- *		 this is required if you use fs APIs in multi-thread
- * environment.
  */
-// #define CONFIG_USE_PER_DEVICE_LOCK
+#ifdef CONFIG_UFFS_USE_PER_DEVICE_LOCK
+#define CONFIG_USE_PER_DEVICE_LOCK
+#endif
 
 /**
  * \def CONFIG_USE_STATIC_MEMORY_ALLOCATOR
- * \note uffs will use static memory allocator if this is defined.
- *       to use static memory allocator, you need to provide memory
- *       buffer when creating uffs_Device.
- *
- *       use UFFS_STATIC_BUFF_SIZE() to calculate memory buffer size.
  */
-#define CONFIG_USE_STATIC_MEMORY_ALLOCATOR 0
-
-/**
- * \def CONFIG_USE_SYSTEM_MEMORY_ALLOCATOR
- * \note  using system platform's 'malloc' and 'free'.
- */
+#ifdef CONFIG_UFFS_USE_SYSTEM_MEMORY_ALLOCATOR
 #define CONFIG_USE_SYSTEM_MEMORY_ALLOCATOR 1
+#define CONFIG_USE_STATIC_MEMORY_ALLOCATOR 0
+#else
+#define CONFIG_USE_SYSTEM_MEMORY_ALLOCATOR 0
+#define CONFIG_USE_STATIC_MEMORY_ALLOCATOR 1
+#endif
 
 /**
  * \def CONFIG_FLUSH_BUF_AFTER_WRITE
- * \note UFFS will write all data directly into flash in
- *       each 'write' call if you enable this option.
- *       (which means lesser data lost when power failure but
- *		 poorer writing performance).
- *		 It's not recommended to enable this for normal applications.
  */
 // #define CONFIG_FLUSH_BUF_AFTER_WRITE
 
 /**
  * \def CONFIG_UFFS_AUTO_LAYOUT_MTD_COMP
- * \note Use Linux MTD compatiable spare placement for UFFS_LAYOUT_AUTO,
- *       only valid for page data size 512 or 2048.
  */
 // #define CONFIG_UFFS_AUTO_LAYOUT_USE_MTD_SCHEME
 
@@ -179,69 +172,43 @@
 
 /**
  * \def MINIMUN_ERASED_BLOCK
- *  UFFS will not allow appending or creating new files when the free/erased
- * block is lower then MINIMUN_ERASED_BLOCK.
  */
 #define MINIMUN_ERASED_BLOCK 2
 
 /**
  * \def CONFIG_CHANGE_MODIFY_TIME
- * \note If defined, closing a file which is opened for writing/appending will
- *       update the file's modify time as well.
- *       It's not recommended to enable this for most application.
  */
 // #define CONFIG_CHANGE_MODIFY_TIME
 
 /**
  * \def CONFIG_ENABLE_BAD_BLOCK_VERIFY
- * \note Allow erase and verify block marked as 'bad' when format UFFS
- * partition. It's not recommended for most NAND flash.
  */
 // #define CONFIG_ENABLE_BAD_BLOCK_VERIFY
 
 /**
  * \def CONFIG_ERASE_BLOCK_BEFORE_MARK_BAD
- * \note Erase block before mark bad block.
- *       This is required if a dedicated 'MarkBadBlock' not provided by flash
- * driver.
  */
 #define CONFIG_ERASE_BLOCK_BEFORE_MARK_BAD
 
 /**
  * \def CONFIG_PAGE_WRITE_VERIFY
- * \note verify page data after write, for extra safe data storage.
- *      It's recommented to enable if you are using MLC NAND or low quality NAND
- * flash chip.
  */
+#ifdef CONFIG_UFFS_PAGE_WRITE_VERIFY
 #define CONFIG_PAGE_WRITE_VERIFY
+#endif
 
 /**
  * \def CONFIG_BAD_BLOCK_POLICY_STRICT
- * \note If this config is enabled, UFFS will report the block as 'bad' if any
- * bit-flips found; otherwise, UFFS report bad block only when ECC failed or
- * reported by low level flash driver.
- *
- * \note Enable this will ensure your data always be stored on completely good
- * blocks. Probably should not enable this for most NAND flash.
  */
 // #define CONFIG_BAD_BLOCK_POLICY_STRICT
 
 /**
  * \def CONFIG_UFFS_REFRESH_BLOCK
- * \note If this config is enabled, when bit flip(s) detected and corrected by
- * ECC, UFFS will copy block data to a new flash block and erase the old block
- * (not mark it as 'bad').
- *
- * \note CONFIG_BAD_BLOCK_POLICY_STRICT should be disabled if this config is
- * choosen.
  */
 #define CONFIG_UFFS_REFRESH_BLOCK
 
 /**
  * \def CONFIG_ENABLE_PAGE_DATA_CRC
- * \note If this is enabled, UFFS save page data CRC16 sum in mini header,
- *       it provides extra protection for data integrity.
- *		 Enable this if your CPU has enough processing power.
  */
 // #define CONFIG_ENABLE_PAGE_DATA_CRC
 

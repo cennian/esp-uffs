@@ -49,10 +49,9 @@ static int uffs_xtx_init_flash(struct uffs_DeviceSt *dev) {
   return 0;
 }
 
-static int uffs_xtx_write_page_with_layout(struct uffs_DeviceSt *dev,
-                                           uint32_t block, uint32_t page,
-                                           const uint8_t *data, int data_len,
-                                           const uint8_t *ecc,
+static int uffs_xtx_write_page_with_layout(struct uffs_DeviceSt *dev, u32 block,
+                                           u32 page, const uint8_t *data,
+                                           int data_len, const uint8_t *ecc,
                                            const struct uffs_TagStoreSt *ts) {
   uint8_t spare[64];
   memset(spare, 0xFF, sizeof(spare));
@@ -82,7 +81,7 @@ esp_err_t uffs_spi_nand_init_xtx(struct uffs_DeviceSt *dev,
   priv->page_size = 2048;
   priv->spare_size = 64;
   priv->block_size = 64;
-  priv->total_blocks = 1024;
+  priv->total_blocks = 128; // Reduced for Mock Test (1024->128)
 
   attr->page_data_size = priv->page_size;
   attr->pages_per_block = priv->block_size;

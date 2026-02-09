@@ -1,33 +1,108 @@
 {
     "version":            "1.1",
     "project_name":       "test_host_uffs",
-    "project_version":    "945d290-dirty",
+    "project_version":    "a9bb85b-dirty",
     "project_path":       "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test",
     "idf_path":           "/home/ihtesham-ullah/esp/esp-idf",
     "build_dir":          "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build",
     "config_file":        "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/sdkconfig",
-    "config_defaults":    "",
-    "bootloader_elf":     "",
+    "config_defaults":    "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/sdkconfig.defaults",
+    "bootloader_elf":     "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/bootloader/bootloader.elf",
     "app_elf":            "test_host_uffs.elf",
     "app_bin":            "test_host_uffs.bin",
-    "build_type":         "ram_app",
+    "build_type":         "flash_app",
     "git_revision":       "v5.4-dev-3602-ga97a7b0962",
-    "target":             "linux",
-    "rev":                "",
+    "target":             "esp32",
+    "rev":                "0",
     "min_rev":            "0",
-    "max_rev":            "999",
+    "max_rev":            "399",
     "phy_data_partition": "",
-    "monitor_baud" :      "",
-    "monitor_toolprefix": "",
-    "c_compiler":         "/usr/bin/cc",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "c_compiler":         "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/home/ihtesham-ullah/esp/esp-idf/components/console/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/efuse/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp-tls/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_common/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ana_cmpr/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_cam/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gpio/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2c/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_isp/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_jpeg/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ledc/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_parlio/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_pcnt/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdm/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_tsens/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_uart/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_event/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_http_client/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_https_server/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_partition/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_ringbuf/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_system/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_timer/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/fatfs/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/freertos/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/hal/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/heap/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/log/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/lwip/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/mbedtls/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/mqtt/esp-mqtt/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/pthread/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/soc/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/spiffs/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/tcp_transport/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/unity/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling/Kconfig",
-        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/ihtesham-ullah/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/ihtesham-ullah/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+        "COMPONENT_KCONFIGS" : "/home/ihtesham-ullah/esp/esp-idf/components/app_trace/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/bt/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/console/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/driver/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/efuse/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp-tls/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_coex/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_common/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ana_cmpr/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_cam/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_dac/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gpio/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gptimer/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2c/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2s/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_isp/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_jpeg/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ledc/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_parlio/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_pcnt/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdm/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_spi/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_touch_sens/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_tsens/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_uart/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_event/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_http_client/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_https_ota/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_https_server/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_mm/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_partition/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_phy/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_pm/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_psram/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_ringbuf/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_security/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_system/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_timer/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/fatfs/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/freertos/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/hal/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/heap/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/ieee802154/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/log/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/lwip/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/mbedtls/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/mqtt/esp-mqtt/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/newlib/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/nvs_sec_provider/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/openthread/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/protocomm/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/pthread/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/soc/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/spiffs/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/tcp_transport/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/ulp/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/unity/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/usb/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/vfs/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling/Kconfig;/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/Kconfig;/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/Kconfig;/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/mock_driver/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/ihtesham-ullah/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/ihtesham-ullah/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/ihtesham-ullah/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/ihtesham-ullah/esp/esp-idf/components/partition_table/Kconfig.projbuild"
     },
-    "common_component_reqs": [ "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "linux" ],
-    "build_components" : [ "cmock", "console", "driver", "efuse", "esp-tls", "esp_app_format", "esp_common", "esp_driver_ana_cmpr", "esp_driver_cam", "esp_driver_gpio", "esp_driver_i2c", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_tsens", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_http_client", "esp_http_server", "esp_https_server", "esp_hw_support", "esp_netif", "esp_netif_stack", "esp_partition", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "fatfs", "freertos", "hal", "heap", "http_parser", "json", "linux", "log", "lwip", "main", "mbedtls", "mqtt", "nvs_flash", "partition_table", "protobuf-c", "pthread", "rt", "soc", "spi_flash", "spiffs", "tcp_transport", "uffs", "unity", "wear_levelling", "" ],
-    "build_component_paths" : [ "/home/ihtesham-ullah/esp/esp-idf/components/cmock", "/home/ihtesham-ullah/esp/esp-idf/components/console", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/driver", "/home/ihtesham-ullah/esp/esp-idf/components/efuse", "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls", "/home/ihtesham-ullah/esp/esp-idf/components/esp_app_format", "/home/ihtesham-ullah/esp/esp-idf/components/esp_common", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ana_cmpr", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_cam", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gpio", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_isp", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_jpeg", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ledc", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_parlio", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_pcnt", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ppa", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdio", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdm", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdmmc", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdspi", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_tsens", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_uart", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_usb_serial_jtag", "/home/ihtesham-ullah/esp/esp-idf/components/esp_event", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_client", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server", "/home/ihtesham-ullah/esp/esp-idf/components/esp_https_server", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif_stack", "/home/ihtesham-ullah/esp/esp-idf/components/esp_partition", "/home/ihtesham-ullah/esp/esp-idf/components/esp_ringbuf", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system", "/home/ihtesham-ullah/esp/esp-idf/components/esp_timer", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs", "/home/ihtesham-ullah/esp/esp-idf/components/freertos", "/home/ihtesham-ullah/esp/esp-idf/components/hal", "/home/ihtesham-ullah/esp/esp-idf/components/heap", "/home/ihtesham-ullah/esp/esp-idf/components/http_parser", "/home/ihtesham-ullah/esp/esp-idf/components/json", "/home/ihtesham-ullah/esp/esp-idf/components/linux", "/home/ihtesham-ullah/esp/esp-idf/components/log", "/home/ihtesham-ullah/esp/esp-idf/components/lwip", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/main", "/home/ihtesham-ullah/esp/esp-idf/components/mbedtls", "/home/ihtesham-ullah/esp/esp-idf/components/mqtt", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash", "/home/ihtesham-ullah/esp/esp-idf/components/partition_table", "/home/ihtesham-ullah/esp/esp-idf/components/protobuf-c", "/home/ihtesham-ullah/esp/esp-idf/components/pthread", "/home/ihtesham-ullah/esp/esp-idf/components/rt", "/home/ihtesham-ullah/esp/esp-idf/components/soc", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs", "/home/ihtesham-ullah/esp/esp-idf/components/tcp_transport", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs", "/home/ihtesham-ullah/esp/esp-idf/components/unity", "/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling", "" ],
+    "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
+    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_cam", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_touch_sens", "esp_driver_tsens", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "espcoredump", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mock_driver", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "rt", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "uffs", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "/home/ihtesham-ullah/esp/esp-idf/components/app_trace", "/home/ihtesham-ullah/esp/esp-idf/components/app_update", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support", "/home/ihtesham-ullah/esp/esp-idf/components/bt", "/home/ihtesham-ullah/esp/esp-idf/components/cmock", "/home/ihtesham-ullah/esp/esp-idf/components/console", "/home/ihtesham-ullah/esp/esp-idf/components/cxx", "/home/ihtesham-ullah/esp/esp-idf/components/driver", "/home/ihtesham-ullah/esp/esp-idf/components/efuse", "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls", "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc", "/home/ihtesham-ullah/esp/esp-idf/components/esp_app_format", "/home/ihtesham-ullah/esp/esp-idf/components/esp_bootloader_format", "/home/ihtesham-ullah/esp/esp-idf/components/esp_coex", "/home/ihtesham-ullah/esp/esp-idf/components/esp_common", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ana_cmpr", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_cam", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_dac", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gpio", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gptimer", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2s", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_isp", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_jpeg", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ledc", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_parlio", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_pcnt", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ppa", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdio", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdm", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdmmc", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdspi", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_spi", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_touch_sens", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_tsens", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_uart", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_usb_serial_jtag", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth", "/home/ihtesham-ullah/esp/esp-idf/components/esp_event", "/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hid", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_client", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server", "/home/ihtesham-ullah/esp/esp-idf/components/esp_https_ota", "/home/ihtesham-ullah/esp/esp-idf/components/esp_https_server", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd", "/home/ihtesham-ullah/esp/esp-idf/components/esp_local_ctrl", "/home/ihtesham-ullah/esp/esp-idf/components/esp_mm", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif_stack", "/home/ihtesham-ullah/esp/esp-idf/components/esp_partition", "/home/ihtesham-ullah/esp/esp-idf/components/esp_phy", "/home/ihtesham-ullah/esp/esp-idf/components/esp_pm", "/home/ihtesham-ullah/esp/esp-idf/components/esp_psram", "/home/ihtesham-ullah/esp/esp-idf/components/esp_ringbuf", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom", "/home/ihtesham-ullah/esp/esp-idf/components/esp_security", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system", "/home/ihtesham-ullah/esp/esp-idf/components/esp_timer", "/home/ihtesham-ullah/esp/esp-idf/components/esp_vfs_console", "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi", "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump", "/home/ihtesham-ullah/esp/esp-idf/components/esptool_py", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs", "/home/ihtesham-ullah/esp/esp-idf/components/freertos", "/home/ihtesham-ullah/esp/esp-idf/components/hal", "/home/ihtesham-ullah/esp/esp-idf/components/heap", "/home/ihtesham-ullah/esp/esp-idf/components/http_parser", "/home/ihtesham-ullah/esp/esp-idf/components/idf_test", "/home/ihtesham-ullah/esp/esp-idf/components/ieee802154", "/home/ihtesham-ullah/esp/esp-idf/components/json", "/home/ihtesham-ullah/esp/esp-idf/components/log", "/home/ihtesham-ullah/esp/esp-idf/components/lwip", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/main", "/home/ihtesham-ullah/esp/esp-idf/components/mbedtls", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/mock_driver", "/home/ihtesham-ullah/esp/esp-idf/components/mqtt", "/home/ihtesham-ullah/esp/esp-idf/components/newlib", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_sec_provider", "/home/ihtesham-ullah/esp/esp-idf/components/openthread", "/home/ihtesham-ullah/esp/esp-idf/components/partition_table", "/home/ihtesham-ullah/esp/esp-idf/components/perfmon", "/home/ihtesham-ullah/esp/esp-idf/components/protobuf-c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm", "/home/ihtesham-ullah/esp/esp-idf/components/pthread", "/home/ihtesham-ullah/esp/esp-idf/components/rt", "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc", "/home/ihtesham-ullah/esp/esp-idf/components/soc", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs", "/home/ihtesham-ullah/esp/esp-idf/components/tcp_transport", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs", "/home/ihtesham-ullah/esp/esp-idf/components/ulp", "/home/ihtesham-ullah/esp/esp-idf/components/unity", "/home/ihtesham-ullah/esp/esp-idf/components/usb", "/home/ihtesham-ullah/esp/esp-idf/components/vfs", "/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant", "/home/ihtesham-ullah/esp/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
+        "app_trace": {
+            "alias": "idf::app_trace",
+            "target": "___idf_app_trace",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/app_trace",
+            "type": "LIBRARY",
+            "lib": "__idf_app_trace",
+            "reqs": [ "esp_timer" ],
+            "priv_reqs": [ "esp_driver_gptimer", "esp_driver_gpio", "esp_driver_uart" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/app_trace/libapp_trace.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/app_trace/app_trace.c", "/home/ihtesham-ullah/esp/esp-idf/components/app_trace/app_trace_util.c", "/home/ihtesham-ullah/esp/esp-idf/components/app_trace/host_file_io.c", "/home/ihtesham-ullah/esp/esp-idf/components/app_trace/port/port_uart.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "app_update": {
+            "alias": "idf::app_update",
+            "target": "___idf_app_update",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/app_update",
+            "type": "LIBRARY",
+            "lib": "__idf_app_update",
+            "reqs": [ "partition_table", "bootloader_support", "esp_app_format", "esp_bootloader_format", "esp_partition" ],
+            "priv_reqs": [ "esptool_py", "efuse", "spi_flash" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/app_update/libapp_update.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/app_update/esp_ota_ops.c", "/home/ihtesham-ullah/esp/esp-idf/components/app_update/esp_ota_app_desc.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "bootloader": {
+            "alias": "idf::bootloader",
+            "target": "___idf_bootloader",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/bootloader",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_bootloader",
+            "reqs": [],
+            "priv_reqs": [ "partition_table", "esptool_py" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": []
+        },
+        "bootloader_support": {
+            "alias": "idf::bootloader_support",
+            "target": "___idf_bootloader_support",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support",
+            "type": "LIBRARY",
+            "lib": "__idf_bootloader_support",
+            "reqs": [ "soc" ],
+            "priv_reqs": [ "spi_flash", "mbedtls", "efuse", "heap", "esp_bootloader_format", "esp_app_format" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/bootloader_support/libbootloader_support.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/bootloader_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/bootloader_random.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/secure_boot.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/flash_partitions.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/esp_image_format.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/idf/bootloader_sha.c", "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support/src/esp32/secure_boot_secure_features.c" ],
+            "include_dirs": [ "include", "bootloader_flash/include" ]
+        },
+        "bt": {
+            "alias": "idf::bt",
+            "target": "___idf_bt",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/bt",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_bt",
+            "reqs": [ "esp_timer", "esp_wifi" ],
+            "priv_reqs": [ "nvs_flash", "soc", "esp_pm", "esp_phy", "esp_coex", "mbedtls", "esp_driver_uart", "vfs", "esp_ringbuf" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": []
+        },
         "cmock": {
             "alias": "idf::cmock",
             "target": "___idf_cmock",
@@ -50,28 +125,43 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/console",
             "type": "LIBRARY",
             "lib": "__idf_console",
-            "reqs": [],
+            "reqs": [ "vfs", "esp_vfs_console" ],
             "priv_reqs": [ "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/console/libconsole.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/console/commands.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/esp_console_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/split_argv.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/linenoise/linenoise.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/esp_console_repl_linux.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_cmd.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_date.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_dbl.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_dstr.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_end.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_file.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_hashtable.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_int.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_lit.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_rem.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_rex.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_str.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/argtable3.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/console/commands.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/esp_console_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/split_argv.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/linenoise/linenoise.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/esp_console_repl_chip.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_cmd.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_date.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_dbl.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_dstr.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_end.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_file.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_hashtable.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_int.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_lit.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_rem.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_rex.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_str.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/arg_utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/console/argtable3/argtable3.c" ],
             "include_dirs": [ "/home/ihtesham-ullah/esp/esp-idf/components/console" ]
+        },
+        "cxx": {
+            "alias": "idf::cxx",
+            "target": "___idf_cxx",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/cxx",
+            "type": "LIBRARY",
+            "lib": "__idf_cxx",
+            "reqs": [],
+            "priv_reqs": [ "pthread", "esp_system" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/cxx/libcxx.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/cxx/cxx_exception_stubs.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/cxx/cxx_guards.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/cxx/cxx_init.cpp" ],
+            "include_dirs": []
         },
         "driver": {
             "alias": "idf::driver",
             "target": "___idf_driver",
             "prefix": "idf",
-            "dir": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/driver",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/driver",
             "type": "LIBRARY",
             "lib": "__idf_driver",
-            "reqs": [ "esp_common", "log" ],
-            "priv_reqs": [],
+            "reqs": [ "esp_pm", "esp_ringbuf", "freertos", "soc", "hal", "esp_hw_support", "esp_driver_gpio", "esp_driver_pcnt", "esp_driver_gptimer", "esp_driver_spi", "esp_driver_mcpwm", "esp_driver_ana_cmpr", "esp_driver_i2s", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_sdio", "esp_driver_dac", "esp_driver_rmt", "esp_driver_tsens", "esp_driver_sdm", "esp_driver_i2c", "esp_driver_uart", "esp_driver_ledc", "esp_driver_parlio", "esp_driver_usb_serial_jtag" ],
+            "priv_reqs": [ "efuse", "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/driver/libdriver.a",
-            "sources": [ "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/driver/mock_spi_master.c" ],
-            "include_dirs": [ "include" ]
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/adc_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/adc_dma_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/dac_common_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/esp32/dac_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/timer_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/i2c/i2c.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/i2s_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/mcpwm_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/pcnt_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/rmt_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/sigma_delta_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/touch_sensor/touch_sensor_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/twai/twai.c", "/home/ihtesham-ullah/esp/esp-idf/components/driver/deprecated/adc_i2s_deprecated.c" ],
+            "include_dirs": [ "deprecated", "i2c/include", "touch_sensor/include", "twai/include", "touch_sensor/esp32/include" ]
         },
         "efuse": {
             "alias": "idf::efuse",
@@ -81,12 +171,12 @@
             "type": "LIBRARY",
             "lib": "__idf_efuse",
             "reqs": [],
-            "priv_reqs": [ "soc", "spi_flash", "esp_system", "esp_partition" ],
+            "priv_reqs": [ "bootloader_support", "soc", "spi_flash", "esp_system", "esp_partition", "esp_app_format" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/efuse/libefuse.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/efuse/linux/esp_efuse_table.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/linux/esp_efuse_fields.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/linux/esp_efuse_utility.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/esp_efuse_api.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/esp_efuse_fields.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/esp_efuse_utility.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
-            "include_dirs": [ "include", "linux/include" ]
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/efuse/esp32/esp_efuse_table.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/esp32/esp_efuse_fields.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/esp32/esp_efuse_utility.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/esp_efuse_api.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/esp_efuse_fields.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/esp_efuse_utility.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c", "/home/ihtesham-ullah/esp/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
+            "include_dirs": [ "include", "esp32/include" ]
         },
         "esp-tls": {
             "alias": "idf::esp-tls",
@@ -96,12 +186,27 @@
             "type": "LIBRARY",
             "lib": "__idf_esp-tls",
             "reqs": [ "mbedtls" ],
-            "priv_reqs": [ "http_parser", "esp_timer" ],
+            "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp-tls/libesp-tls.a",
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls/esp_tls.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls/esp-tls-crypto/esp_tls_crypto.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls/esp_tls_error_capture.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls/esp_tls_platform_port.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls/esp_tls_mbedtls.c" ],
             "include_dirs": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls", "esp-tls-crypto" ]
+        },
+        "esp_adc": {
+            "alias": "idf::esp_adc",
+            "target": "___idf_esp_adc",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_adc",
+            "reqs": [],
+            "priv_reqs": [ "driver", "esp_driver_gpio", "efuse", "esp_pm", "esp_ringbuf", "esp_mm" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_adc/libesp_adc.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/adc_oneshot.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/adc_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/adc_cali.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/adc_cali_curve_fitting.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/adc_continuous.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/esp32/adc_dma.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/esp32/adc_cali_line_fitting.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc/deprecated/esp32/esp_adc_cal_legacy.c" ],
+            "include_dirs": [ "include", "interface", "esp32/include", "deprecated/include" ]
         },
         "esp_app_format": {
             "alias": "idf::esp_app_format",
@@ -116,6 +221,36 @@
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_app_format/libesp_app_format.a",
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_app_format/esp_app_desc.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_bootloader_format": {
+            "alias": "idf::esp_bootloader_format",
+            "target": "___idf_esp_bootloader_format",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_bootloader_format",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_bootloader_format",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_coex": {
+            "alias": "idf::esp_coex",
+            "target": "___idf_esp_coex",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_coex",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_coex",
+            "reqs": [],
+            "priv_reqs": [ "esp_timer", "driver", "esp_event" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_coex/libesp_coex.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_coex/esp32/esp_coex_adapter.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_coex/src/coexist_debug_diagram.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_coex/src/coexist_debug.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_common": {
@@ -141,7 +276,7 @@
             "type": "CONFIG_ONLY",
             "lib": "__idf_esp_driver_ana_cmpr",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "",
@@ -155,7 +290,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_cam",
             "type": "LIBRARY",
             "lib": "__idf_esp_driver_cam",
-            "reqs": [ "esp_driver_isp" ],
+            "reqs": [ "esp_driver_isp", "esp_mm" ],
             "priv_reqs": [ "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -163,34 +298,79 @@
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_cam/esp_cam_ctlr.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_cam/dvp_share_ctrl.c" ],
             "include_dirs": [ "include", "interface" ]
         },
+        "esp_driver_dac": {
+            "alias": "idf::esp_driver_dac",
+            "target": "___idf_esp_driver_dac",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_dac",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_driver_dac",
+            "reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_i2s" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_dac/libesp_driver_dac.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_dac/dac_oneshot.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_dac/dac_cosine.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_dac/dac_continuous.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_dac/dac_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_dac/esp32/dac_dma.c" ],
+            "include_dirs": [ "./include" ]
+        },
         "esp_driver_gpio": {
             "alias": "idf::esp_driver_gpio",
             "target": "___idf_esp_driver_gpio",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gpio",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_gpio",
             "reqs": [],
+            "priv_reqs": [ "esp_pm" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gpio/src/gpio.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gpio/src/gpio_glitch_filter_ops.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gpio/src/rtc_io.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_driver_gptimer": {
+            "alias": "idf::esp_driver_gptimer",
+            "target": "___idf_esp_driver_gptimer",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gptimer",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_driver_gptimer",
+            "reqs": [ "esp_pm" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
-            "include_dirs": []
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gptimer/src/gptimer.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gptimer/src/gptimer_common.c" ],
+            "include_dirs": [ "include" ]
         },
         "esp_driver_i2c": {
             "alias": "idf::esp_driver_i2c",
             "target": "___idf_esp_driver_i2c",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2c",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_i2c",
             "reqs": [],
-            "priv_reqs": [ "esp_ringbuf" ],
+            "priv_reqs": [ "esp_driver_gpio", "esp_pm", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2c/i2c_master.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2c/i2c_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2c/i2c_slave.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_driver_i2s": {
+            "alias": "idf::esp_driver_i2s",
+            "target": "___idf_esp_driver_i2s",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2s",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_driver_i2s",
+            "reqs": [],
+            "priv_reqs": [ "esp_driver_gpio", "esp_pm", "esp_mm" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_i2s/libesp_driver_i2s.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2s/i2s_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2s/i2s_std.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2s/i2s_pdm.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2s/i2s_platform.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_isp": {
@@ -200,7 +380,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_isp",
             "type": "CONFIG_ONLY",
             "lib": "__idf_esp_driver_isp",
-            "reqs": [],
+            "reqs": [ "esp_mm" ],
             "priv_reqs": [ "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -216,7 +396,7 @@
             "type": "CONFIG_ONLY",
             "lib": "__idf_esp_driver_jpeg",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_mm", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "",
@@ -228,14 +408,14 @@
             "target": "___idf_esp_driver_ledc",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ledc",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_ledc",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ledc/src/ledc.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_mcpwm": {
@@ -243,14 +423,14 @@
             "target": "___idf_esp_driver_mcpwm",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_mcpwm",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_cap.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_cmpr.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_com.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_fault.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_gen.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_oper.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_sync.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_timer.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_parlio": {
@@ -261,7 +441,7 @@
             "type": "CONFIG_ONLY",
             "lib": "__idf_esp_driver_parlio",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "",
@@ -273,14 +453,14 @@
             "target": "___idf_esp_driver_pcnt",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_pcnt",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_pcnt",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_pcnt/src/pulse_cnt.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_ppa": {
@@ -291,7 +471,7 @@
             "type": "CONFIG_ONLY",
             "lib": "__idf_esp_driver_ppa",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_mm", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "",
@@ -303,14 +483,14 @@
             "target": "___idf_esp_driver_rmt",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_rmt",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt/src/rmt_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt/src/rmt_encoder.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt/src/rmt_rx.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt/src/rmt_tx.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_sdio": {
@@ -318,14 +498,14 @@
             "target": "___idf_esp_driver_sdio",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdio",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_sdio",
             "reqs": [],
-            "priv_reqs": [ "esp_ringbuf" ],
+            "priv_reqs": [ "esp_driver_gpio", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdio/src/sdio_slave.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_sdm": {
@@ -333,14 +513,14 @@
             "target": "___idf_esp_driver_sdm",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdm",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_sdm",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdm/src/sdm.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_sdmmc": {
@@ -348,14 +528,14 @@
             "target": "___idf_esp_driver_sdmmc",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdmmc",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_sdmmc",
-            "reqs": [],
-            "priv_reqs": [ "esp_timer" ],
+            "reqs": [ "sdmmc", "esp_driver_gpio" ],
+            "priv_reqs": [ "esp_timer", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_sdspi": {
@@ -363,15 +543,45 @@
             "target": "___idf_esp_driver_sdspi",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdspi",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_sdspi",
-            "reqs": [],
+            "reqs": [ "sdmmc", "esp_driver_spi", "esp_driver_gpio" ],
             "priv_reqs": [ "esp_timer" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdspi/src/sdspi_crc.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdspi/src/sdspi_host.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdspi/src/sdspi_transaction.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_driver_spi": {
+            "alias": "idf::esp_driver_spi",
+            "target": "___idf_esp_driver_spi",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_spi",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_driver_spi",
+            "reqs": [ "esp_pm" ],
+            "priv_reqs": [ "esp_timer", "esp_mm", "esp_driver_gpio", "esp_ringbuf" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_spi/libesp_driver_spi.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_slave.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_dma.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_driver_touch_sens": {
+            "alias": "idf::esp_driver_touch_sens",
+            "target": "___idf_esp_driver_touch_sens",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_touch_sens",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_esp_driver_touch_sens",
+            "reqs": [],
+            "priv_reqs": [ "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "",
             "sources": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": []
         },
         "esp_driver_tsens": {
             "alias": "idf::esp_driver_tsens",
@@ -393,14 +603,14 @@
             "target": "___idf_esp_driver_uart",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_uart",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_uart",
             "reqs": [],
-            "priv_reqs": [ "esp_ringbuf" ],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_driver_uart/libesp_driver_uart.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_uart/src/uart.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_usb_serial_jtag": {
@@ -411,11 +621,26 @@
             "type": "CONFIG_ONLY",
             "lib": "__idf_esp_driver_usb_serial_jtag",
             "reqs": [],
-            "priv_reqs": [ "esp_ringbuf", "esp_timer" ],
+            "priv_reqs": [ "esp_driver_gpio", "esp_ringbuf", "esp_pm", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "",
             "sources": [],
+            "include_dirs": [ "include" ]
+        },
+        "esp_eth": {
+            "alias": "idf::esp_eth",
+            "target": "___idf_esp_eth",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_eth",
+            "reqs": [ "esp_event" ],
+            "priv_reqs": [ "log", "esp_timer", "esp_driver_spi", "esp_driver_gpio" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_eth/libesp_eth.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/esp_eth.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_802_3.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/esp_eth_netif_glue.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/mac/esp_eth_mac_esp.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/mac/esp_eth_mac_esp_dma.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/mac/esp_eth_mac_esp_gpio.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_dp83848.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_ip101.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_ksz80xx.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_lan87xx.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_rtl8201.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_event": {
@@ -425,12 +650,42 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_event",
             "type": "LIBRARY",
             "lib": "__idf_esp_event",
-            "reqs": [ "log", "esp_common", "freertos", "linux" ],
-            "priv_reqs": [],
+            "reqs": [ "log", "esp_common", "freertos" ],
+            "priv_reqs": [ "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_event/libesp_event.a",
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_event/default_event_loop.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_event/esp_event.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_event/esp_event_private.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_gdbstub": {
+            "alias": "idf::esp_gdbstub",
+            "target": "___idf_esp_gdbstub",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_gdbstub",
+            "reqs": [ "freertos" ],
+            "priv_reqs": [ "soc", "esp_rom", "esp_system" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_gdbstub/libesp_gdbstub.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub/src/gdbstub.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub/src/packet.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub/src/port/xtensa/gdbstub_xtensa.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub/src/port/xtensa/gdbstub-entry.S", "/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub/src/port/xtensa/xt_debugexception.S" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_hid": {
+            "alias": "idf::esp_hid",
+            "target": "___idf_esp_hid",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_hid",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_hid",
+            "reqs": [ "esp_event", "bt" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_hid/libesp_hid.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_hid/src/esp_hidd.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hid/src/esp_hidh.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hid/src/esp_hid_common.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_http_client": {
@@ -440,7 +695,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_client",
             "type": "LIBRARY",
             "lib": "__idf_esp_http_client",
-            "reqs": [ "linux", "esp_event" ],
+            "reqs": [ "lwip", "esp_event" ],
             "priv_reqs": [ "tcp_transport", "http_parser" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -456,11 +711,26 @@
             "type": "LIBRARY",
             "lib": "__idf_esp_http_server",
             "reqs": [ "http_parser", "esp_event" ],
-            "priv_reqs": [ "mbedtls", "pthread" ],
+            "priv_reqs": [ "mbedtls", "lwip", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_http_server/libesp_http_server.a",
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server/src/httpd_main.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server/src/httpd_parse.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server/src/httpd_sess.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server/src/httpd_txrx.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server/src/httpd_uri.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server/src/httpd_ws.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server/src/util/ctrl_sock.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_https_ota": {
+            "alias": "idf::esp_https_ota",
+            "target": "___idf_esp_https_ota",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_https_ota",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_https_ota",
+            "reqs": [ "esp_http_client", "bootloader_support", "esp_app_format", "esp_event" ],
+            "priv_reqs": [ "log", "app_update" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_https_ota/libesp_https_ota.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_https_ota/src/esp_https_ota.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_https_server": {
@@ -485,12 +755,57 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support",
             "type": "LIBRARY",
             "lib": "__idf_esp_hw_support",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "soc" ],
+            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "esp_driver_gpio", "esp_timer", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_hw_support/libesp_hw_support.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/linux/esp_random.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/linux/chip_info.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/cpu.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/esp_cpu_intr.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/esp_memory_utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/cpu_region_protect.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/esp_clk.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/clk_ctrl_os.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/hw_random.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/intr_alloc.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/mac_addr.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/periph_ctrl.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/revision.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/rtc_module.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/sleep_modem.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/sleep_modes.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/sleep_console.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/sleep_gpio.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/sleep_event.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/regi2c_ctrl.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/esp_gpio_reserve.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/sar_periph_ctrl_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/io_mux.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/esp_clk_tree.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp_clk_tree_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/dma/esp_dma_utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/dma/gdma_link.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/spi_share_hw_ctrl.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/spi_bus_lock.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/adc_share_hw_ctrl.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/rtc_wdt.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/sleep_wake_stub.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/esp_clock_output.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_clk.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_clk_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_sleep.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_time.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/chip_info.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/cache_sram_mmu.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/port/esp32/sar_periph_ctrl.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support/lowpower" ],
+            "include_dirs": [ "include", "include/soc", "include/soc/esp32", "dma/include", "ldo/include", "debug_probe/include" ]
+        },
+        "esp_lcd": {
+            "alias": "idf::esp_lcd",
+            "target": "___idf_esp_lcd",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_lcd",
+            "reqs": [ "driver", "esp_driver_gpio", "esp_driver_i2c", "esp_driver_spi" ],
+            "priv_reqs": [ "esp_mm", "esp_psram", "esp_pm", "esp_driver_i2s" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_lcd/libesp_lcd.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/src/esp_lcd_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_io.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_nt35510.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_ssd1306.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_st7789.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_ops.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/i2c/esp_lcd_panel_io_i2c_v1.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/i2c/esp_lcd_panel_io_i2c_v2.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/spi/esp_lcd_panel_io_spi.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd/i80/esp_lcd_panel_io_i2s.c" ],
+            "include_dirs": [ "include", "interface" ]
+        },
+        "esp_local_ctrl": {
+            "alias": "idf::esp_local_ctrl",
+            "target": "___idf_esp_local_ctrl",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_local_ctrl",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_local_ctrl",
+            "reqs": [ "protocomm", "esp_https_server" ],
+            "priv_reqs": [ "protobuf-c" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_local_ctrl/libesp_local_ctrl.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_local_ctrl/src/esp_local_ctrl.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_local_ctrl/src/esp_local_ctrl_handler.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_local_ctrl/proto-c/esp_local_ctrl.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_local_ctrl/src/esp_local_ctrl_transport_httpd.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_mm": {
+            "alias": "idf::esp_mm",
+            "target": "___idf_esp_mm",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_mm",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_mm",
+            "reqs": [],
+            "priv_reqs": [ "heap", "spi_flash" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_mm/libesp_mm.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_mm/esp_mmu_map.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_mm/port/esp32/ext_mem_layout.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_mm/esp_cache.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_mm/cache_esp32.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_mm/heap_align_hw.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_netif": {
@@ -505,7 +820,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_netif/libesp_netif.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/esp_netif_handlers.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/esp_netif_objects.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/esp_netif_defaults.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/loopback/esp_netif_loopback.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/esp_netif_handlers.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/esp_netif_objects.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/esp_netif_defaults.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/lwip/esp_netif_sntp.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/lwip/esp_netif_lwip_defaults.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/lwip/netif/wlanif.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/lwip/netif/ethernetif.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_netif/lwip/netif/esp_pbuf_ref.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_netif_stack": {
@@ -531,11 +846,56 @@
             "type": "LIBRARY",
             "lib": "__idf_esp_partition",
             "reqs": [],
-            "priv_reqs": [ "esp_system", "spi_flash", "partition_table" ],
+            "priv_reqs": [ "esp_system", "spi_flash", "partition_table", "bootloader_support", "app_update" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_partition/libesp_partition.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_partition/partition.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_partition/partition_linux.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_partition/partition.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_partition/partition_target.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_phy": {
+            "alias": "idf::esp_phy",
+            "target": "___idf_esp_phy",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_phy",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_phy",
+            "reqs": [],
+            "priv_reqs": [ "nvs_flash", "driver", "efuse", "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_phy/libesp_phy.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_phy/src/phy_override.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_phy/src/lib_printf.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_phy/src/phy_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_phy/src/phy_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_phy/esp32/phy_init_data.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_phy/src/btbb_init.c" ],
+            "include_dirs": [ "include", "esp32/include" ]
+        },
+        "esp_pm": {
+            "alias": "idf::esp_pm",
+            "target": "___idf_esp_pm",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_pm",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_pm",
+            "reqs": [],
+            "priv_reqs": [ "esp_system", "esp_driver_gpio", "esp_timer" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_pm/libesp_pm.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_pm/pm_locks.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_pm/pm_trace.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_pm/pm_impl.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_psram": {
+            "alias": "idf::esp_psram",
+            "target": "___idf_esp_psram",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_psram",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_esp_psram",
+            "reqs": [],
+            "priv_reqs": [ "heap", "spi_flash", "esp_mm", "bootloader_support", "driver" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
             "include_dirs": [ "include" ]
         },
         "esp_ringbuf": {
@@ -561,12 +921,27 @@
             "type": "LIBRARY",
             "lib": "__idf_esp_rom",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_rom/libesp_rom.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_sys.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_print.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux/esp_rom_sys.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux/esp_rom_crc.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux/esp_rom_md5.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/linux/esp_rom_efuse.c" ],
-            "include_dirs": [ "include", "linux/include", "linux/include/linux", "linux" ]
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_sys.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_print.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_crc.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_uart.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_spiflash.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_efuse.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_gpio.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom/patches/esp_rom_longjmp.S" ],
+            "include_dirs": [ "include", "esp32/include", "esp32/include/esp32", "esp32" ]
+        },
+        "esp_security": {
+            "alias": "idf::esp_security",
+            "target": "___idf_esp_security",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_security",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_security",
+            "reqs": [],
+            "priv_reqs": [ "efuse", "esp_hw_support", "esp_system", "esp_timer" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_security/libesp_security.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_security/src/init.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_security/src/esp_crypto_lock.c" ],
+            "include_dirs": [ "include" ]
         },
         "esp_system": {
             "alias": "idf::esp_system",
@@ -576,11 +951,11 @@
             "type": "LIBRARY",
             "lib": "__idf_esp_system",
             "reqs": [],
-            "priv_reqs": [ "spi_flash" ],
+            "priv_reqs": [ "spi_flash", "esp_timer", "esp_mm", "bootloader_support", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_system/libesp_system.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/esp_system.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/esp_err.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/soc/linux/reset_reason.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/soc/linux/system_internal.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/esp_system_linux.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/esp_err.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/crosscore_int.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/esp_ipc.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/freertos_hooks.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/int_wdt.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/panic.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/esp_system.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/startup.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/startup_funcs.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/system_time.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/stack_check.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/ubsan.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/xt_wdt.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/task_wdt/task_wdt_impl_timergroup.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/cpu_start.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/panic_handler.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/esp_system_chip.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/image_process.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/brownout.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/esp_ipc_isr.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_port.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_handler.S", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_routines.S", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/panic_arch.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/panic_handler_asm.S", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack_asm.S", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers_asm.S", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/arch/xtensa/trax.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/soc/esp32/highint_hdl.S", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/soc/esp32/clk.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/soc/esp32/reset_reason.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/soc/esp32/system_internal.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_system/port/soc/esp32/cache_err_int.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_timer": {
@@ -588,15 +963,75 @@
             "target": "___idf_esp_timer",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_timer",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_timer",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_timer/libesp_timer.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_timer/src/esp_timer.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_timer/src/esp_timer_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_timer/src/ets_timer_legacy.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_timer/src/system_time.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_timer/src/esp_timer_impl_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_timer/src/esp_timer_impl_lac.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_vfs_console": {
+            "alias": "idf::esp_vfs_console",
+            "target": "___idf_esp_vfs_console",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_vfs_console",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_vfs_console",
+            "reqs": [],
+            "priv_reqs": [ "vfs", "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_vfs_console/libesp_vfs_console.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_vfs_console/vfs_console.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_wifi": {
+            "alias": "idf::esp_wifi",
+            "target": "___idf_esp_wifi",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_wifi",
+            "reqs": [ "esp_event", "esp_phy", "esp_netif" ],
+            "priv_reqs": [ "driver", "esptool_py", "esp_pm", "esp_timer", "nvs_flash", "wpa_supplicant", "hal", "lwip", "esp_coex" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/esp_wifi/libesp_wifi.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/src/lib_printf.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/src/mesh_event.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/src/smartconfig.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/src/wifi_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/src/wifi_default.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/src/wifi_netif.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/src/wifi_default_ap.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c", "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi/src/smartconfig_ack.c" ],
+            "include_dirs": [ "include", "wifi_apps/include", "wifi_apps/nan_app/include", "include/local" ]
+        },
+        "espcoredump": {
+            "alias": "idf::espcoredump",
+            "target": "___idf_espcoredump",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump",
+            "type": "LIBRARY",
+            "lib": "__idf_espcoredump",
+            "reqs": [],
+            "priv_reqs": [ "esp_partition", "spi_flash", "bootloader_support", "mbedtls", "esp_rom", "soc", "esp_system", "esp_driver_gpio", "driver" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/espcoredump/libespcoredump.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/src/core_dump_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/src/core_dump_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/src/core_dump_flash.c", "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/src/core_dump_uart.c", "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/src/core_dump_elf.c", "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/src/core_dump_binary.c", "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/src/core_dump_sha.c", "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/src/core_dump_crc.c", "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump/src/port/xtensa/core_dump_port.c" ],
+            "include_dirs": [ "include", "include/port/xtensa" ]
+        },
+        "esptool_py": {
+            "alias": "idf::esptool_py",
+            "target": "___idf_esptool_py",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esptool_py",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_esptool_py",
+            "reqs": [ "bootloader" ],
+            "priv_reqs": [ "partition_table" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
             "file": "",
             "sources": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": []
         },
         "fatfs": {
             "alias": "idf::fatfs",
@@ -605,13 +1040,13 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/fatfs",
             "type": "LIBRARY",
             "lib": "__idf_fatfs",
-            "reqs": [ "wear_levelling" ],
-            "priv_reqs": [],
+            "reqs": [ "wear_levelling", "sdmmc", "esp_driver_sdmmc", "esp_driver_sdspi" ],
+            "priv_reqs": [ "vfs", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/fatfs/libfatfs.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/diskio/diskio.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/diskio/diskio_wl.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/src/ff.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/src/ffunicode.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/port/linux/ffsystem.c" ],
-            "include_dirs": [ "diskio", "src" ]
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/diskio/diskio.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/diskio/diskio_wl.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/src/ff.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/src/ffunicode.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/diskio/diskio_sdmmc.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/vfs/vfs_fat.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c", "/home/ihtesham-ullah/esp/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c" ],
+            "include_dirs": [ "diskio", "src", "vfs" ]
         },
         "freertos": {
             "alias": "idf::freertos",
@@ -625,8 +1060,8 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/freertos/libfreertos.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/freertos/heap_idf.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/stream_buffer.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/linux/port.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/linux/utils/wait_for_event.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/linux/port_idf.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/esp_additions/freertos_compatibility.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/esp_additions/idf_additions_event_groups.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/esp_additions/idf_additions.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/esp_additions/FreeRTOSSimulator_wrappers.c" ],
-            "include_dirs": [ "config/include", "config/include/freertos", "config/linux/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/linux/include", "FreeRTOS-Kernel/portable/linux/include/freertos", "esp_additions/include" ]
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/freertos/heap_idf.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/app_startup.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/port_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/port_systick.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/stream_buffer.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/esp_additions/freertos_compatibility.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/esp_additions/idf_additions_event_groups.c", "/home/ihtesham-ullah/esp/esp-idf/components/freertos/esp_additions/idf_additions.c" ],
+            "include_dirs": [ "config/include", "config/include/freertos", "config/xtensa/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/xtensa/include", "FreeRTOS-Kernel/portable/xtensa/include/freertos", "esp_additions/include" ]
         },
         "hal": {
             "alias": "idf::hal",
@@ -640,8 +1075,8 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/hal/libhal.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/hal/hal_utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/efuse_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/linux/efuse_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/color_hal.c" ],
-            "include_dirs": [ "platform_port/include", "linux/include", "include" ]
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/hal/hal_utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/mpu_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/efuse_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/esp32/efuse_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/wdt_hal_iram.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/mmu_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/esp32/cache_hal_esp32.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/color_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/spi_flash_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/spi_flash_hal_iram.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/spi_flash_encrypt_hal_iram.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/esp32/clk_tree_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/uart_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/uart_hal_iram.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/gpio_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/rtc_io_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/timer_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/ledc_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/ledc_hal_iram.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/i2c_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/i2c_hal_iram.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/rmt_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/pcnt_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/mcpwm_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/twai_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/twai_hal_iram.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/i2s_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/sdm_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/sdmmc_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/emac_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/adc_hal_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/adc_oneshot_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/adc_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/mpi_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/sha_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/aes_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/brownout_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/spi_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/spi_hal_iram.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/spi_slave_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/spi_slave_hal_iram.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/sdio_slave_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/esp32/touch_sensor_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/touch_sensor_hal.c", "/home/ihtesham-ullah/esp/esp-idf/components/hal/esp32/gpio_hal_workaround.c" ],
+            "include_dirs": [ "platform_port/include", "esp32/include", "include" ]
         },
         "heap": {
             "alias": "idf::heap",
@@ -651,12 +1086,12 @@
             "type": "LIBRARY",
             "lib": "__idf_heap",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/heap/libheap.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/heap/heap_caps_linux.c" ],
-            "include_dirs": [ "include" ]
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/heap/heap_caps_base.c", "/home/ihtesham-ullah/esp/esp-idf/components/heap/heap_caps.c", "/home/ihtesham-ullah/esp/esp-idf/components/heap/heap_caps_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/heap/multi_heap.c", "/home/ihtesham-ullah/esp/esp-idf/components/heap/tlsf/tlsf.c", "/home/ihtesham-ullah/esp/esp-idf/components/heap/port/memory_layout_utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/heap/port/esp32/memory_layout.c" ],
+            "include_dirs": [ "include", "tlsf" ]
         },
         "http_parser": {
             "alias": "idf::http_parser",
@@ -673,6 +1108,36 @@
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/http_parser/http_parser.c" ],
             "include_dirs": [ "." ]
         },
+        "idf_test": {
+            "alias": "idf::idf_test",
+            "target": "___idf_idf_test",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/idf_test",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_idf_test",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": [ "include", "include/esp32" ]
+        },
+        "ieee802154": {
+            "alias": "idf::ieee802154",
+            "target": "___idf_ieee802154",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/ieee802154",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_ieee802154",
+            "reqs": [],
+            "priv_reqs": [ "esp_phy", "driver", "esp_timer", "esp_coex", "soc", "hal" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": [ "include" ]
+        },
         "json": {
             "alias": "idf::json",
             "target": "___idf_json",
@@ -688,21 +1153,6 @@
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/json/cJSON/cJSON.c", "/home/ihtesham-ullah/esp/esp-idf/components/json/cJSON/cJSON_Utils.c" ],
             "include_dirs": [ "cJSON" ]
         },
-        "linux": {
-            "alias": "idf::linux",
-            "target": "___idf_linux",
-            "prefix": "idf",
-            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/linux",
-            "type": "LIBRARY",
-            "lib": "__idf_linux",
-            "reqs": [],
-            "priv_reqs": [],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/linux/liblinux.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/linux/fls.c" ],
-            "include_dirs": [ "include", "linux_include" ]
-        },
         "log": {
             "alias": "idf::log",
             "target": "___idf_log",
@@ -715,7 +1165,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/log/liblog.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/log/src/linux/log_timestamp.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_timestamp_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/linux/log_lock.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/os/log_write.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/buffer/log_buffers.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/util.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_level/log_level.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_level/tag_log_level/tag_log_level.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_level/tag_log_level/linked_list/log_linked_list.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_level/tag_log_level/cache/log_binary_heap.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/log/src/os/log_timestamp.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_timestamp_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/os/log_lock.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/os/log_write.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/buffer/log_buffers.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/util.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_level/log_level.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_level/tag_log_level/tag_log_level.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_level/tag_log_level/linked_list/log_linked_list.c", "/home/ihtesham-ullah/esp/esp-idf/components/log/src/log_level/tag_log_level/cache/log_binary_heap.c" ],
             "include_dirs": [ "include" ]
         },
         "lwip": {
@@ -723,15 +1173,15 @@
             "target": "___idf_lwip",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/lwip",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_lwip",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
-            "include_dirs": []
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/lwip/liblwip.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/lwip/apps/sntp/sntp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/api/err.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/api/if_api.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/api/netbuf.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/api/netdb.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/api/netifapi.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/api/sockets.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/apps/sntp/sntp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/apps/netbiosns/netbiosns.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/def.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/dns.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/inet_chksum.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/init.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ip.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/mem.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/memp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/netif.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/pbuf.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/raw.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/stats.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/sys.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/tcp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/tcp_in.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/tcp_out.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/timeouts.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/udp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv4/autoip.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv4/dhcp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv4/etharp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv4/icmp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv4/igmp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv4/ip4.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_napt.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_addr.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_frag.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv6/dhcp6.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv6/ethip6.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv6/icmp6.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv6/inet6.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv6/ip6.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_addr.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_frag.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv6/mld6.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/core/ipv6/nd6.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ethernet.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/bridgeif.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/bridgeif_fdb.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/slipif.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/auth.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ccp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/chap-md5.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/chap-new.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/chap_ms.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/demand.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/eap.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ecp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/eui64.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/fsm.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ipcp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ipv6cp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/lcp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/magic.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/mppe.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/multilink.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ppp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppapi.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppcrypt.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppoe.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppol2tp.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppos.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/upap.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/vj.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/port/hooks/tcp_isn_default.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/port/hooks/lwip_default_hooks.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/port/debug/lwip_debug.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/port/sockets_ext.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/port/freertos/sys_arch.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/port/acd_dhcp_check.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/port/esp32xx/vfs_lwip.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/apps/ping/esp_ping.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/apps/ping/ping.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/apps/ping/ping_sock.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/arc4.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/des.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/md4.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/md5.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/sha1.c", "/home/ihtesham-ullah/esp/esp-idf/components/lwip/apps/dhcpserver/dhcpserver.c" ],
+            "include_dirs": [ "include", "include/apps", "include/apps/sntp", "lwip/src/include", "port/include", "port/freertos/include/", "port/esp32xx/include", "port/esp32xx/include/arch", "port/esp32xx/include/sys" ]
         },
         "main": {
             "alias": "idf::main",
@@ -756,12 +1206,27 @@
             "type": "LIBRARY",
             "lib": "__idf_mbedtls",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "soc", "esp_hw_support", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/mbedtls/libmbedtls.a",
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/x509_crt_bundle.S" ],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
+        },
+        "mock_driver": {
+            "alias": "idf::mock_driver",
+            "target": "___idf_mock_driver",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/mock_driver",
+            "type": "LIBRARY",
+            "lib": "__idf_mock_driver",
+            "reqs": [ "esp_common", "log" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/mock_driver/libmock_driver.a",
+            "sources": [ "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/mock_driver/mock_spi_master.c" ],
+            "include_dirs": [ "include" ]
         },
         "mqtt": {
             "alias": "idf::mqtt",
@@ -778,6 +1243,21 @@
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c", "/home/ihtesham-ullah/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "/home/ihtesham-ullah/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "/home/ihtesham-ullah/esp/esp-idf/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c" ],
             "include_dirs": [ "/home/ihtesham-ullah/esp/esp-idf/components/mqtt/esp-mqtt/include" ]
         },
+        "newlib": {
+            "alias": "idf::newlib",
+            "target": "___idf_newlib",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/newlib",
+            "type": "LIBRARY",
+            "lib": "__idf_newlib",
+            "reqs": [],
+            "priv_reqs": [ "soc", "spi_flash" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/newlib/libnewlib.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/newlib/abort.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/assert.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/heap.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/flockfile.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/locks.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/poll.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/pthread.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/random.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/getentropy.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/reent_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/newlib_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/syscalls.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/termios.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/stdatomic.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/time.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/sysconf.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/realpath.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/scandir.c", "/home/ihtesham-ullah/esp/esp-idf/components/newlib/port/esp_time_impl.c" ],
+            "include_dirs": [ "platform_include" ]
+        },
         "nvs_flash": {
             "alias": "idf::nvs_flash",
             "target": "___idf_nvs_flash",
@@ -786,12 +1266,42 @@
             "type": "LIBRARY",
             "lib": "__idf_nvs_flash",
             "reqs": [ "esp_partition" ],
-            "priv_reqs": [ "spi_flash" ],
+            "priv_reqs": [ "spi_flash", "newlib" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/nvs_flash/libnvs_flash.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_api.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_cxx_api.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_item_hash_list.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_page.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_pagemanager.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_storage.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_handle_simple.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_handle_locked.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_partition.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_partition_lookup.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_partition_manager.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_types.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_platform.cpp" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_api.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_cxx_api.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_item_hash_list.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_page.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_pagemanager.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_storage.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_handle_simple.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_handle_locked.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_partition.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_partition_lookup.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_partition_manager.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_types.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_platform.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash/src/nvs_encrypted_partition.cpp" ],
             "include_dirs": [ "include" ]
+        },
+        "nvs_sec_provider": {
+            "alias": "idf::nvs_sec_provider",
+            "target": "___idf_nvs_sec_provider",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/nvs_sec_provider",
+            "type": "LIBRARY",
+            "lib": "__idf_nvs_sec_provider",
+            "reqs": [],
+            "priv_reqs": [ "bootloader_support", "efuse", "esp_partition", "nvs_flash" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "openthread": {
+            "alias": "idf::openthread",
+            "target": "___idf_openthread",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/openthread",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_openthread",
+            "reqs": [ "esp_netif", "lwip", "esp_driver_uart", "driver" ],
+            "priv_reqs": [ "console", "esp_event", "esp_partition", "esp_timer", "ieee802154", "mbedtls", "nvs_flash" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": []
         },
         "partition_table": {
             "alias": "idf::partition_table",
@@ -801,12 +1311,27 @@
             "type": "CONFIG_ONLY",
             "lib": "__idf_partition_table",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esptool_py" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "",
             "sources": [],
             "include_dirs": []
+        },
+        "perfmon": {
+            "alias": "idf::perfmon",
+            "target": "___idf_perfmon",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/perfmon",
+            "type": "LIBRARY",
+            "lib": "__idf_perfmon",
+            "reqs": [ "xtensa" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/perfmon/libperfmon.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/perfmon/xtensa_perfmon_access.c", "/home/ihtesham-ullah/esp/esp-idf/components/perfmon/xtensa_perfmon_apis.c", "/home/ihtesham-ullah/esp/esp-idf/components/perfmon/xtensa_perfmon_masks.c" ],
+            "include_dirs": [ "include" ]
         },
         "protobuf-c": {
             "alias": "idf::protobuf-c",
@@ -823,6 +1348,21 @@
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/protobuf-c/protobuf-c/protobuf-c/protobuf-c.c" ],
             "include_dirs": [ "protobuf-c" ]
         },
+        "protocomm": {
+            "alias": "idf::protocomm",
+            "target": "___idf_protocomm",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/protocomm",
+            "type": "LIBRARY",
+            "lib": "__idf_protocomm",
+            "reqs": [ "bt" ],
+            "priv_reqs": [ "protobuf-c", "mbedtls", "console", "esp_http_server", "driver" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/protocomm/libprotocomm.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/src/common/protocomm.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/proto-c/constants.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/proto-c/sec0.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/proto-c/sec1.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/proto-c/sec2.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/proto-c/session.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/src/transports/protocomm_console.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/src/transports/protocomm_httpd.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/src/security/security0.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/src/security/security1.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/src/security/security2.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp.c", "/home/ihtesham-ullah/esp/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp_mpi.c" ],
+            "include_dirs": [ "include/common", "include/security", "include/transports", "include/crypto/srp6a", "proto-c" ]
+        },
         "pthread": {
             "alias": "idf::pthread",
             "target": "___idf_pthread",
@@ -835,7 +1375,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/pthread/libpthread.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/pthread/port/linux/pthread.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/pthread/pthread.c", "/home/ihtesham-ullah/esp/esp-idf/components/pthread/pthread_cond_var.c", "/home/ihtesham-ullah/esp/esp-idf/components/pthread/pthread_local_storage.c", "/home/ihtesham-ullah/esp/esp-idf/components/pthread/pthread_rwlock.c", "/home/ihtesham-ullah/esp/esp-idf/components/pthread/pthread_semaphore.c" ],
             "include_dirs": [ "include" ]
         },
         "rt": {
@@ -843,30 +1383,45 @@
             "target": "___idf_rt",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/rt",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_rt",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
-            "include_dirs": []
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/rt/librt.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/rt/FreeRTOS_POSIX_mqueue.c", "/home/ihtesham-ullah/esp/esp-idf/components/rt/FreeRTOS_POSIX_utils.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "sdmmc": {
+            "alias": "idf::sdmmc",
+            "target": "___idf_sdmmc",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc",
+            "type": "LIBRARY",
+            "lib": "__idf_sdmmc",
+            "reqs": [],
+            "priv_reqs": [ "soc", "esp_timer", "esp_mm" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/sdmmc/libsdmmc.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc/sdmmc_cmd.c", "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc/sdmmc_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc/sdmmc_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc/sdmmc_io.c", "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc/sdmmc_mmc.c", "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc/sdmmc_sd.c", "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc/sd_pwr_ctrl/sd_pwr_ctrl.c" ],
+            "include_dirs": [ "include" ]
         },
         "soc": {
             "alias": "idf::soc",
             "target": "___idf_soc",
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/soc",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_soc",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
-            "include_dirs": [ "include", "linux", "linux/include" ]
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/soc/libsoc.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/soc/lldesc.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/dport_access_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/interrupts.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/gpio_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/uart_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/dport_access.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/adc_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/emac_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/spi_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/ledc_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/pcnt_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/rmt_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/sdm_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/i2s_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/i2c_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/timer_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/lcd_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/mcpwm_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/mpi_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/sdmmc_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/touch_sensor_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/twai_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/wdt_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/dac_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/rtc_io_periph.c", "/home/ihtesham-ullah/esp/esp-idf/components/soc/esp32/sdio_slave_periph.c" ],
+            "include_dirs": [ "include", "esp32", "esp32/include", "esp32/register" ]
         },
         "spi_flash": {
             "alias": "idf::spi_flash",
@@ -875,12 +1430,12 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash",
             "type": "LIBRARY",
             "lib": "__idf_spi_flash",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "hal" ],
+            "priv_reqs": [ "bootloader_support", "app_update", "soc", "esp_mm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/spi_flash/libspi_flash.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/linux/spi_flash_linux.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/linux/cache_utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/linux/flash_mmap.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/flash_brownout_hook.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_chip_drivers.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_chip_issi.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_chip_mxic.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_chip_gd.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_chip_winbond.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_chip_boya.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_chip_th.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/memspi_host_driver.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/cache_utils.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/flash_mmap.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/flash_ops.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_wrap.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/esp_flash_api.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/esp_flash_spi_init.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_os_func_app.c", "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" ],
             "include_dirs": [ "include" ]
         },
         "spiffs": {
@@ -891,11 +1446,11 @@
             "type": "LIBRARY",
             "lib": "__idf_spiffs",
             "reqs": [ "esp_partition" ],
-            "priv_reqs": [],
+            "priv_reqs": [ "bootloader_support", "esptool_py", "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/spiffs/libspiffs.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs_api.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_cache.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_check.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_gc.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_hydrogen.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs_api.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_cache.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_check.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_gc.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_hydrogen.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.c", "/home/ihtesham-ullah/esp/esp-idf/components/spiffs/esp_spiffs.c" ],
             "include_dirs": [ "include" ]
         },
         "tcp_transport": {
@@ -905,7 +1460,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/tcp_transport",
             "type": "LIBRARY",
             "lib": "__idf_tcp_transport",
-            "reqs": [ "esp-tls" ],
+            "reqs": [ "esp-tls", "lwip", "esp_timer" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -928,6 +1483,21 @@
             "sources": [ "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_badblock.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_blockinfo.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_buf.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_crc.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_debug.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_device.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_ecc.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_fd.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_find.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_flash.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_fs.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_init.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_mem.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_mtb.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_pool.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_public.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_tree.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_utils.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/src/uffs_version.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/uffs_port.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_common.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_winbond.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_micron.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_alliance.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_zetta.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_xtx.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand_gd.c", "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/port/esp_spi_nand.c" ],
             "include_dirs": [ "include", "port" ]
         },
+        "ulp": {
+            "alias": "idf::ulp",
+            "target": "___idf_ulp",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/ulp",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_ulp",
+            "reqs": [ "driver", "esp_adc" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": []
+        },
         "unity": {
             "alias": "idf::unity",
             "target": "___idf_unity",
@@ -940,8 +1510,38 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/unity/libunity.a",
-            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity/src/unity.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_compat.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_runner.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_utils_memory.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_port_linux.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/port/linux/unity_utils_memory_linux.c" ],
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity/src/unity.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_compat.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_runner.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_utils_freertos.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_utils_cache.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_utils_memory.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/unity_port_esp32.c", "/home/ihtesham-ullah/esp/esp-idf/components/unity/port/esp/unity_utils_memory_esp.c" ],
             "include_dirs": [ "include", "unity/src" ]
+        },
+        "usb": {
+            "alias": "idf::usb",
+            "target": "___idf_usb",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/usb",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_usb",
+            "reqs": [],
+            "priv_reqs": [ "esp_driver_gpio", "esp_mm" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": []
+        },
+        "vfs": {
+            "alias": "idf::vfs",
+            "target": "___idf_vfs",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/vfs",
+            "type": "LIBRARY",
+            "lib": "__idf_vfs",
+            "reqs": [],
+            "priv_reqs": [ "esp_timer", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_vfs_console" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/vfs/libvfs.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/vfs/vfs.c", "/home/ihtesham-ullah/esp/esp-idf/components/vfs/vfs_eventfd.c", "/home/ihtesham-ullah/esp/esp-idf/components/vfs/vfs_semihost.c", "/home/ihtesham-ullah/esp/esp-idf/components/vfs/nullfs.c" ],
+            "include_dirs": [ "include" ]
         },
         "wear_levelling": {
             "alias": "idf::wear_levelling",
@@ -957,6 +1557,51 @@
             "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/wear_levelling/libwear_levelling.a",
             "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling/Partition.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling/SPI_Flash.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling/WL_Ext_Perf.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling/WL_Ext_Safe.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling/WL_Flash.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling/crc32.cpp", "/home/ihtesham-ullah/esp/esp-idf/components/wear_levelling/wear_levelling.cpp" ],
             "include_dirs": [ "include" ]
+        },
+        "wifi_provisioning": {
+            "alias": "idf::wifi_provisioning",
+            "target": "___idf_wifi_provisioning",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning",
+            "type": "LIBRARY",
+            "lib": "__idf_wifi_provisioning",
+            "reqs": [ "lwip", "protocomm" ],
+            "priv_reqs": [ "protobuf-c", "bt", "json", "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/wifi_provisioning/libwifi_provisioning.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/src/wifi_config.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/src/wifi_scan.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/src/wifi_ctrl.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/src/manager.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/src/handlers.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/src/scheme_console.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/proto-c/wifi_config.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/proto-c/wifi_scan.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/proto-c/wifi_ctrl.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/proto-c/wifi_constants.pb-c.c", "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning/src/scheme_softap.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "wpa_supplicant": {
+            "alias": "idf::wpa_supplicant",
+            "target": "___idf_wpa_supplicant",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant",
+            "type": "LIBRARY",
+            "lib": "__idf_wpa_supplicant",
+            "reqs": [],
+            "priv_reqs": [ "mbedtls", "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/wpa_supplicant/libwpa_supplicant.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/port/os_xtensa.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/port/eloop.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/ap/ap_config.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/ap/ieee802_1x.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/ap/wpa_auth.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/ap/wpa_auth_ie.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/ap/pmksa_cache_auth.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/ap/sta_info.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/ap/ieee802_11.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/ap/comeback_token.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/common/sae.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/common/dragonfly.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/common/wpa_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/utils/bitfield.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-siv.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256-kdf.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/ccmp.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-gcm.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/crypto_ops.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/dh_group5.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/dh_groups.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/ms_funcs.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-tlsprf.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256-tlsprf.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/sha384-tlsprf.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256-prf.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-prf.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/sha384-prf.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/md4-internal.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-tprf.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_common/eap_wsc_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/common/ieee802_11_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/chap.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_mschapv2.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_ttls.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/mschapv2.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_pac.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/pmksa_cache.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa_ie.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/utils/base64.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/utils/common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/utils/ext_password.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/utils/uuid.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/utils/wpabuf.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/utils/wpa_debug.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/utils/json.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/wps/wps.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/wps/wps_attr_build.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/wps/wps_attr_parse.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/wps/wps_attr_process.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/wps/wps_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/wps/wps_dev_attr.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/wps/wps_enrollee.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/common/sae_pk.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_eap_client.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa2_api_port.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpas_glue.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_common.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wps.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa3.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_owe.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_hostap.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/tls_mbedtls.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/fastpbkdf2.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-ec.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/rc4.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/des-internal.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-wrap.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-unwrap.c", "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-ccm.c" ],
+            "include_dirs": [ "include", "port/include", "esp_supplicant/include" ]
+        },
+        "xtensa": {
+            "alias": "idf::xtensa",
+            "target": "___idf_xtensa",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/xtensa",
+            "type": "LIBRARY",
+            "lib": "__idf_xtensa",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/esp-idf/xtensa/libxtensa.a",
+            "sources": [ "/home/ihtesham-ullah/esp/esp-idf/components/xtensa/eri.c", "/home/ihtesham-ullah/esp/esp-idf/components/xtensa/xt_trax.c", "/home/ihtesham-ullah/esp/esp-idf/components/xtensa/xtensa_context.S", "/home/ihtesham-ullah/esp/esp-idf/components/xtensa/xtensa_intr_asm.S", "/home/ihtesham-ullah/esp/esp-idf/components/xtensa/xtensa_intr.c", "/home/ihtesham-ullah/esp/esp-idf/components/xtensa/xtensa_vectors.S" ],
+            "include_dirs": [ "esp32/include", "include", "deprecated_include" ]
         }
     },
     "all_component_info" : {
@@ -966,11 +1611,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/app_trace",
             "lib": "__idf_app_trace",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "esp_timer" ],
+            "priv_reqs": [ "esp_driver_gptimer", "esp_driver_gpio", "esp_driver_uart" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "port" ]
+            "include_dirs": [ "include" ]
         },
         "app_update": {
             "alias": "idf::app_update",
@@ -978,11 +1623,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/app_update",
             "lib": "__idf_app_update",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "partition_table", "bootloader_support", "esp_app_format", "esp_bootloader_format", "esp_partition" ],
+            "priv_reqs": [ "esptool_py", "efuse", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "port" ]
+            "include_dirs": [ "include" ]
         },
         "bootloader": {
             "alias": "idf::bootloader",
@@ -991,10 +1636,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/bootloader",
             "lib": "__idf_bootloader",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "partition_table", "esptool_py" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "port" ]
+            "include_dirs": []
         },
         "bootloader_support": {
             "alias": "idf::bootloader_support",
@@ -1002,11 +1647,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/bootloader_support",
             "lib": "__idf_bootloader_support",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "soc" ],
+            "priv_reqs": [ "spi_flash", "mbedtls", "efuse", "heap", "esp_bootloader_format", "esp_app_format" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "port" ]
+            "include_dirs": [ "include", "bootloader_flash/include" ]
         },
         "bt": {
             "alias": "idf::bt",
@@ -1014,11 +1659,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/bt",
             "lib": "__idf_bt",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "esp_timer", "esp_wifi" ],
+            "priv_reqs": [ "nvs_flash", "soc", "esp_pm", "esp_phy", "esp_coex", "mbedtls", "esp_driver_uart", "vfs", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "port" ]
+            "include_dirs": []
         },
         "cmock": {
             "alias": "idf::cmock",
@@ -1038,7 +1683,7 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/console",
             "lib": "__idf_console",
-            "reqs": [],
+            "reqs": [ "vfs", "esp_vfs_console" ],
             "priv_reqs": [ "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -1051,22 +1696,22 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/cxx",
             "lib": "__idf_cxx",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "pthread", "esp_system" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build" ]
+            "include_dirs": []
         },
         "driver": {
             "alias": "idf::driver",
             "target": "___idf_driver",
             "prefix": "idf",
-            "dir": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/driver",
+            "dir": "/home/ihtesham-ullah/esp/esp-idf/components/driver",
             "lib": "__idf_driver",
-            "reqs": [ "esp_common", "log" ],
-            "priv_reqs": [],
+            "reqs": [ "esp_pm", "esp_ringbuf", "freertos", "soc", "hal", "esp_hw_support", "esp_driver_gpio", "esp_driver_pcnt", "esp_driver_gptimer", "esp_driver_spi", "esp_driver_mcpwm", "esp_driver_ana_cmpr", "esp_driver_i2s", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_sdio", "esp_driver_dac", "esp_driver_rmt", "esp_driver_tsens", "esp_driver_sdm", "esp_driver_i2c", "esp_driver_uart", "esp_driver_ledc", "esp_driver_parlio", "esp_driver_usb_serial_jtag" ],
+            "priv_reqs": [ "efuse", "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "deprecated", "i2c/include", "touch_sensor/include", "twai/include", "touch_sensor/esp32/include" ]
         },
         "efuse": {
             "alias": "idf::efuse",
@@ -1075,10 +1720,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/efuse",
             "lib": "__idf_efuse",
             "reqs": [],
-            "priv_reqs": [ "soc", "spi_flash", "esp_system", "esp_partition" ],
+            "priv_reqs": [ "bootloader_support", "soc", "spi_flash", "esp_system", "esp_partition", "esp_app_format" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "linux/include" ]
+            "include_dirs": [ "include", "esp32/include" ]
         },
         "esp-tls": {
             "alias": "idf::esp-tls",
@@ -1087,7 +1732,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls",
             "lib": "__idf_esp-tls",
             "reqs": [ "mbedtls" ],
-            "priv_reqs": [ "http_parser", "esp_timer" ],
+            "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "/home/ihtesham-ullah/esp/esp-idf/components/esp-tls", "esp-tls-crypto" ]
@@ -1099,10 +1744,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_adc",
             "lib": "__idf_esp_adc",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "driver", "esp_driver_gpio", "efuse", "esp_pm", "esp_ringbuf", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build", "esp-tls-crypto" ]
+            "include_dirs": [ "include", "interface", "esp32/include", "deprecated/include" ]
         },
         "esp_app_format": {
             "alias": "idf::esp_app_format",
@@ -1135,7 +1780,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_coex",
             "lib": "__idf_esp_coex",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_timer", "driver", "esp_event" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1159,7 +1804,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ana_cmpr",
             "lib": "__idf_esp_driver_ana_cmpr",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1170,7 +1815,7 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_cam",
             "lib": "__idf_esp_driver_cam",
-            "reqs": [ "esp_driver_isp" ],
+            "reqs": [ "esp_driver_isp", "esp_mm" ],
             "priv_reqs": [ "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -1183,10 +1828,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_dac",
             "lib": "__idf_esp_driver_dac",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_i2s" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "interface" ]
+            "include_dirs": [ "./include" ]
         },
         "esp_driver_gpio": {
             "alias": "idf::esp_driver_gpio",
@@ -1195,10 +1840,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gpio",
             "lib": "__idf_esp_driver_gpio",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "include" ]
         },
         "esp_driver_gptimer": {
             "alias": "idf::esp_driver_gptimer",
@@ -1206,11 +1851,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_gptimer",
             "lib": "__idf_esp_driver_gptimer",
-            "reqs": [],
+            "reqs": [ "esp_pm" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "include" ]
         },
         "esp_driver_i2c": {
             "alias": "idf::esp_driver_i2c",
@@ -1219,7 +1864,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2c",
             "lib": "__idf_esp_driver_i2c",
             "reqs": [],
-            "priv_reqs": [ "esp_ringbuf" ],
+            "priv_reqs": [ "esp_driver_gpio", "esp_pm", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1231,7 +1876,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_i2s",
             "lib": "__idf_esp_driver_i2s",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_driver_gpio", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1242,7 +1887,7 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_isp",
             "lib": "__idf_esp_driver_isp",
-            "reqs": [],
+            "reqs": [ "esp_mm" ],
             "priv_reqs": [ "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -1255,7 +1900,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_jpeg",
             "lib": "__idf_esp_driver_jpeg",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_mm", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1267,7 +1912,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ledc",
             "lib": "__idf_esp_driver_ledc",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1279,7 +1924,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_mcpwm",
             "lib": "__idf_esp_driver_mcpwm",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1291,7 +1936,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_parlio",
             "lib": "__idf_esp_driver_parlio",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1303,7 +1948,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_pcnt",
             "lib": "__idf_esp_driver_pcnt",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1315,7 +1960,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_ppa",
             "lib": "__idf_esp_driver_ppa",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_mm", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1327,7 +1972,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_rmt",
             "lib": "__idf_esp_driver_rmt",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1339,7 +1984,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdio",
             "lib": "__idf_esp_driver_sdio",
             "reqs": [],
-            "priv_reqs": [ "esp_ringbuf" ],
+            "priv_reqs": [ "esp_driver_gpio", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1351,7 +1996,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdm",
             "lib": "__idf_esp_driver_sdm",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1362,8 +2007,8 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdmmc",
             "lib": "__idf_esp_driver_sdmmc",
-            "reqs": [],
-            "priv_reqs": [ "esp_timer" ],
+            "reqs": [ "sdmmc", "esp_driver_gpio" ],
+            "priv_reqs": [ "esp_timer", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1374,7 +2019,7 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_sdspi",
             "lib": "__idf_esp_driver_sdspi",
-            "reqs": [],
+            "reqs": [ "sdmmc", "esp_driver_spi", "esp_driver_gpio" ],
             "priv_reqs": [ "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -1386,8 +2031,8 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_spi",
             "lib": "__idf_esp_driver_spi",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "esp_pm" ],
+            "priv_reqs": [ "esp_timer", "esp_mm", "esp_driver_gpio", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1399,10 +2044,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_touch_sens",
             "lib": "__idf_esp_driver_touch_sens",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": []
         },
         "esp_driver_tsens": {
             "alias": "idf::esp_driver_tsens",
@@ -1423,7 +2068,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_uart",
             "lib": "__idf_esp_driver_uart",
             "reqs": [],
-            "priv_reqs": [ "esp_ringbuf" ],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1435,7 +2080,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_driver_usb_serial_jtag",
             "lib": "__idf_esp_driver_usb_serial_jtag",
             "reqs": [],
-            "priv_reqs": [ "esp_ringbuf", "esp_timer" ],
+            "priv_reqs": [ "esp_driver_gpio", "esp_ringbuf", "esp_pm", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1446,8 +2091,8 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_eth",
             "lib": "__idf_esp_eth",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "esp_event" ],
+            "priv_reqs": [ "log", "esp_timer", "esp_driver_spi", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1458,8 +2103,8 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_event",
             "lib": "__idf_esp_event",
-            "reqs": [ "log", "esp_common", "freertos", "linux" ],
-            "priv_reqs": [],
+            "reqs": [ "log", "esp_common", "freertos" ],
+            "priv_reqs": [ "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1470,8 +2115,8 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_gdbstub",
             "lib": "__idf_esp_gdbstub",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "freertos" ],
+            "priv_reqs": [ "soc", "esp_rom", "esp_system" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1482,7 +2127,7 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_hid",
             "lib": "__idf_esp_hid",
-            "reqs": [],
+            "reqs": [ "esp_event", "bt" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -1494,7 +2139,7 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_client",
             "lib": "__idf_esp_http_client",
-            "reqs": [ "linux", "esp_event" ],
+            "reqs": [ "lwip", "esp_event" ],
             "priv_reqs": [ "tcp_transport", "http_parser" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -1507,7 +2152,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_http_server",
             "lib": "__idf_esp_http_server",
             "reqs": [ "http_parser", "esp_event" ],
-            "priv_reqs": [ "mbedtls", "pthread" ],
+            "priv_reqs": [ "mbedtls", "lwip", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1518,8 +2163,8 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_https_ota",
             "lib": "__idf_esp_https_ota",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "esp_http_client", "bootloader_support", "esp_app_format", "esp_event" ],
+            "priv_reqs": [ "log", "app_update" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1542,11 +2187,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_hw_support",
             "lib": "__idf_esp_hw_support",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "soc" ],
+            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "esp_driver_gpio", "esp_timer", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "include", "include/soc", "include/soc/esp32", "dma/include", "ldo/include", "debug_probe/include" ]
         },
         "esp_lcd": {
             "alias": "idf::esp_lcd",
@@ -1554,11 +2199,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_lcd",
             "lib": "__idf_esp_lcd",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "driver", "esp_driver_gpio", "esp_driver_i2c", "esp_driver_spi" ],
+            "priv_reqs": [ "esp_mm", "esp_psram", "esp_pm", "esp_driver_i2s" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "include", "interface" ]
         },
         "esp_local_ctrl": {
             "alias": "idf::esp_local_ctrl",
@@ -1566,8 +2211,8 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_local_ctrl",
             "lib": "__idf_esp_local_ctrl",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "protocomm", "esp_https_server" ],
+            "priv_reqs": [ "protobuf-c" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1579,7 +2224,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_mm",
             "lib": "__idf_esp_mm",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "heap", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1615,7 +2260,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_partition",
             "lib": "__idf_esp_partition",
             "reqs": [],
-            "priv_reqs": [ "esp_system", "spi_flash", "partition_table" ],
+            "priv_reqs": [ "esp_system", "spi_flash", "partition_table", "bootloader_support", "app_update" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1627,10 +2272,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_phy",
             "lib": "__idf_esp_phy",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "nvs_flash", "driver", "efuse", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "include", "esp32/include" ]
         },
         "esp_pm": {
             "alias": "idf::esp_pm",
@@ -1639,7 +2284,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_pm",
             "lib": "__idf_esp_pm",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_system", "esp_driver_gpio", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1651,7 +2296,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_psram",
             "lib": "__idf_esp_psram",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "heap", "spi_flash", "esp_mm", "bootloader_support", "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1675,10 +2320,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_rom",
             "lib": "__idf_esp_rom",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "linux/include", "linux/include/linux", "linux" ]
+            "include_dirs": [ "include", "esp32/include", "esp32/include/esp32", "esp32" ]
         },
         "esp_security": {
             "alias": "idf::esp_security",
@@ -1687,10 +2332,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_security",
             "lib": "__idf_esp_security",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "efuse", "esp_hw_support", "esp_system", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "linux/include", "linux/include/linux", "linux" ]
+            "include_dirs": [ "include" ]
         },
         "esp_system": {
             "alias": "idf::esp_system",
@@ -1699,7 +2344,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_system",
             "lib": "__idf_esp_system",
             "reqs": [],
-            "priv_reqs": [ "spi_flash" ],
+            "priv_reqs": [ "spi_flash", "esp_timer", "esp_mm", "bootloader_support", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1723,7 +2368,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_vfs_console",
             "lib": "__idf_esp_vfs_console",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "vfs", "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1734,11 +2379,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esp_wifi",
             "lib": "__idf_esp_wifi",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "esp_event", "esp_phy", "esp_netif" ],
+            "priv_reqs": [ "driver", "esptool_py", "esp_pm", "esp_timer", "nvs_flash", "wpa_supplicant", "hal", "lwip", "esp_coex" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "include", "wifi_apps/include", "wifi_apps/nan_app/include", "include/local" ]
         },
         "espcoredump": {
             "alias": "idf::espcoredump",
@@ -1747,10 +2392,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/espcoredump",
             "lib": "__idf_espcoredump",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_partition", "spi_flash", "bootloader_support", "mbedtls", "esp_rom", "soc", "esp_system", "esp_driver_gpio", "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "include", "include/port/xtensa" ]
         },
         "esptool_py": {
             "alias": "idf::esptool_py",
@@ -1758,11 +2403,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/esptool_py",
             "lib": "__idf_esptool_py",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "bootloader" ],
+            "priv_reqs": [ "partition_table" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": []
         },
         "fatfs": {
             "alias": "idf::fatfs",
@@ -1770,11 +2415,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/fatfs",
             "lib": "__idf_fatfs",
-            "reqs": [ "wear_levelling" ],
-            "priv_reqs": [],
+            "reqs": [ "wear_levelling", "sdmmc", "esp_driver_sdmmc", "esp_driver_sdspi" ],
+            "priv_reqs": [ "vfs", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "diskio", "src" ]
+            "include_dirs": [ "diskio", "src", "vfs" ]
         },
         "freertos": {
             "alias": "idf::freertos",
@@ -1786,7 +2431,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "config/include", "config/include/freertos", "config/linux/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/linux/include", "FreeRTOS-Kernel/portable/linux/include/freertos", "esp_additions/include" ]
+            "include_dirs": [ "config/include", "config/include/freertos", "config/xtensa/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/xtensa/include", "FreeRTOS-Kernel/portable/xtensa/include/freertos", "esp_additions/include" ]
         },
         "hal": {
             "alias": "idf::hal",
@@ -1798,7 +2443,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "platform_port/include", "linux/include", "include" ]
+            "include_dirs": [ "platform_port/include", "esp32/include", "include" ]
         },
         "heap": {
             "alias": "idf::heap",
@@ -1807,10 +2452,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/heap",
             "lib": "__idf_heap",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "include", "tlsf" ]
         },
         "http_parser": {
             "alias": "idf::http_parser",
@@ -1834,7 +2479,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "." ]
+            "include_dirs": [ "include", "include/esp32" ]
         },
         "ieee802154": {
             "alias": "idf::ieee802154",
@@ -1843,10 +2488,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/ieee802154",
             "lib": "__idf_ieee802154",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_phy", "driver", "esp_timer", "esp_coex", "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "." ]
+            "include_dirs": [ "include" ]
         },
         "json": {
             "alias": "idf::json",
@@ -1870,7 +2515,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "linux_include" ]
+            "include_dirs": [ "cJSON" ]
         },
         "log": {
             "alias": "idf::log",
@@ -1891,10 +2536,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/lwip",
             "lib": "__idf_lwip",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "include", "include/apps", "include/apps/sntp", "lwip/src/include", "port/include", "port/freertos/include/", "port/esp32xx/include", "port/esp32xx/include/arch", "port/esp32xx/include/sys" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -1903,7 +2548,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/mbedtls",
             "lib": "__idf_mbedtls",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "soc", "esp_hw_support", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
@@ -1927,10 +2572,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/newlib",
             "lib": "__idf_newlib",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "/home/ihtesham-ullah/esp/esp-idf/components/mqtt/esp-mqtt/include" ]
+            "include_dirs": [ "platform_include" ]
         },
         "nvs_flash": {
             "alias": "idf::nvs_flash",
@@ -1939,7 +2584,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/nvs_flash",
             "lib": "__idf_nvs_flash",
             "reqs": [ "esp_partition" ],
-            "priv_reqs": [ "spi_flash" ],
+            "priv_reqs": [ "spi_flash", "newlib" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1951,7 +2596,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/nvs_sec_provider",
             "lib": "__idf_nvs_sec_provider",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "bootloader_support", "efuse", "esp_partition", "nvs_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1962,11 +2607,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/openthread",
             "lib": "__idf_openthread",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "esp_netif", "lwip", "esp_driver_uart", "driver" ],
+            "priv_reqs": [ "console", "esp_event", "esp_partition", "esp_timer", "ieee802154", "mbedtls", "nvs_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": []
         },
         "partition_table": {
             "alias": "idf::partition_table",
@@ -1975,7 +2620,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/partition_table",
             "lib": "__idf_partition_table",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esptool_py" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": []
@@ -1986,11 +2631,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/perfmon",
             "lib": "__idf_perfmon",
-            "reqs": [],
+            "reqs": [ "xtensa" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "include" ]
         },
         "protobuf-c": {
             "alias": "idf::protobuf-c",
@@ -2010,11 +2655,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/protocomm",
             "lib": "__idf_protocomm",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "bt" ],
+            "priv_reqs": [ "protobuf-c", "mbedtls", "console", "esp_http_server", "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "protobuf-c" ]
+            "include_dirs": [ "include/common", "include/security", "include/transports", "include/crypto/srp6a", "proto-c" ]
         },
         "pthread": {
             "alias": "idf::pthread",
@@ -2050,7 +2695,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "include" ]
         },
         "sdmmc": {
             "alias": "idf::sdmmc",
@@ -2059,10 +2704,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/sdmmc",
             "lib": "__idf_sdmmc",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "soc", "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "include" ]
         },
         "soc": {
             "alias": "idf::soc",
@@ -2074,7 +2719,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "linux", "linux/include" ]
+            "include_dirs": [ "include", "esp32", "esp32/include", "esp32/register" ]
         },
         "spi_flash": {
             "alias": "idf::spi_flash",
@@ -2082,8 +2727,8 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/spi_flash",
             "lib": "__idf_spi_flash",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "hal" ],
+            "priv_reqs": [ "bootloader_support", "app_update", "soc", "esp_mm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -2095,7 +2740,7 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/spiffs",
             "lib": "__idf_spiffs",
             "reqs": [ "esp_partition" ],
-            "priv_reqs": [],
+            "priv_reqs": [ "bootloader_support", "esptool_py", "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -2106,7 +2751,7 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/tcp_transport",
             "lib": "__idf_tcp_transport",
-            "reqs": [ "esp-tls" ],
+            "reqs": [ "esp-tls", "lwip", "esp_timer" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -2130,11 +2775,11 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/ulp",
             "lib": "__idf_ulp",
-            "reqs": [],
+            "reqs": [ "driver", "esp_adc" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": []
         },
         "unity": {
             "alias": "idf::unity",
@@ -2155,10 +2800,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/usb",
             "lib": "__idf_usb",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_driver_gpio", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "unity/src" ]
+            "include_dirs": []
         },
         "vfs": {
             "alias": "idf::vfs",
@@ -2167,10 +2812,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/vfs",
             "lib": "__idf_vfs",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_timer", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_vfs_console" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "unity/src" ]
+            "include_dirs": [ "include" ]
         },
         "wear_levelling": {
             "alias": "idf::wear_levelling",
@@ -2190,8 +2835,8 @@
             "prefix": "idf",
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/wifi_provisioning",
             "lib": "__idf_wifi_provisioning",
-            "reqs": [],
-            "priv_reqs": [],
+            "reqs": [ "lwip", "protocomm" ],
+            "priv_reqs": [ "protobuf-c", "bt", "json", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -2203,10 +2848,10 @@
             "dir": "/home/ihtesham-ullah/esp/esp-idf/components/wpa_supplicant",
             "lib": "__idf_wpa_supplicant",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "mbedtls", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "include", "port/include", "esp_supplicant/include" ]
         },
         "xtensa": {
             "alias": "idf::xtensa",
@@ -2218,7 +2863,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "esp32/include", "include", "deprecated_include" ]
         },
         "main": {
             "alias": "idf::main",
@@ -2243,6 +2888,18 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include", "port" ]
+        },
+        "mock_driver": {
+            "alias": "idf::mock_driver",
+            "target": "___idf_mock_driver",
+            "prefix": "idf",
+            "dir": "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/components/mock_driver",
+            "lib": "__idf_mock_driver",
+            "reqs": [ "esp_common", "log" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
         }
     },
     "debug_prefix_map_gdbinit": ""

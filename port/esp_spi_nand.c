@@ -73,7 +73,12 @@ esp_err_t uffs_spi_nand_init_generic(struct uffs_DeviceSt *dev,
   priv->page_size = 2048;
   priv->spare_size = 64;
   priv->block_size = 64;
-  priv->total_blocks = 1024;
+  priv->block_size = 64;
+#ifdef CONFIG_MOCK_FLASH_SIZE_BLOCKS
+  priv->total_blocks = CONFIG_MOCK_FLASH_SIZE_BLOCKS;
+#else
+  priv->total_blocks = 1024; // Generic fallback size
+#endif
 
   attr->page_data_size = priv->page_size;
   attr->pages_per_block = priv->block_size;

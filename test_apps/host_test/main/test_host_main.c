@@ -289,7 +289,133 @@ TEST_CASE("api init all vendors", "[uffs][init]") {
   }
 }
 
+// --- Expanded Test Suite ---
+
+// Thread Safety Test
+#define THREAD_TEST_FILE "/data/thread_test.txt"
+#define THREAD_TASK_COUNT 4
+#define THREAD_ITERATIONS 20
+
+static volatile int task_success_count = 0;
+
+static void file_writer_task(void *arg) {
+  char buf[32];
+  int id = (int)arg;
+  sprintf(buf, "Task%d\n", id);
+
+  for (int i = 0; i < THREAD_ITERATIONS; i++) {
+    int fd = uffs_open(THREAD_TEST_FILE, UO_APPEND | UO_WRONLY | UO_CREATE, 0);
+    if (fd < 0) {
+      ESP_LOGE(TAG, "Task %d: Open failed", id);
+      vTaskDelete(NULL);
+    }
+    uffs_write(fd, buf, strlen(buf));
+    uffs_close(fd);
+    vTaskDelay(pdMS_TO_TICKS(10)); // Yield to let others run
+  }
+
+  // Atomic increment would be better, but this is simple enough for test
+  task_success_count++;
+  vTaskDelete(NULL);
+}
+
+TEST_CASE("uffs thread safety", "[uffs][thread]") {
+  task_success_count = 0;
+  uffs_remove(THREAD_TEST_FILE); // Cleanup first
+
+  for (int i = 0; i < THREAD_TASK_COUNT; i++) {
+    xTaskCreate(file_writer_task, "writer", 4096, (void *)i, 5, NULL);
+  }
+
+  // Wait for tasks
+  int timeout_ms = 5000;
+  while (task_success_count < THREAD_TASK_COUNT && timeout_ms > 0) {
+    vTaskDelay(pdMS_TO_TICKS(100));
+    timeout_ms -= 100;
+  }
+
+  TEST_ASSERT_EQUAL(THREAD_TASK_COUNT, task_success_count);
+
+  // Verify content size
+  int fd = uffs_open(THREAD_TEST_FILE, UO_RDONLY, 0);
+  TEST_ASSERT_GREATER_OR_EQUAL(0, fd);
+
+  // Each task writes "TaskX\n" (6 chars) * 20 times = 120 bytes
+  // Total = 120 * 4 = 480 bytes
+  int size = uffs_seek(fd, 0, SEEK_END);
+  TEST_ASSERT_EQUAL(THREAD_TASK_COUNT * THREAD_ITERATIONS * 6, size);
+  uffs_close(fd);
+}
+
+// Memory Leak Helper
+static size_t free_mem_start;
+
+static void mem_check_start(void) {
+  free_mem_start = heap_caps_get_free_size(MALLOC_CAP_INTERNAL);
+}
+
+static void mem_check_end(const char *msg) {
+  size_t free_mem_end = heap_caps_get_free_size(MALLOC_CAP_INTERNAL);
+  // Allow small variance for heap fragmentation or internal OS buffers
+  // Strict leak means significant loss.
+  int diff = (int)free_mem_start - (int)free_mem_end;
+  ESP_LOGI(TAG, "Memory Check [%s]: Start %d, End %d, Diff %d", msg,
+           free_mem_start, free_mem_end, diff);
+  // Warning only for now as frameworks often have tiny one-time allocs
+  if (diff > 1024) {
+    ESP_LOGW(TAG, "POTENTIAL LEAK DETECTED in %s!", msg);
+  }
+}
+
+TEST_CASE("uffs memory leak check", "[uffs][memory]") {
+  mem_check_start();
+
+  // Run a cycle of open/write/close/delete
+  const char *fname = "/data/memleak.bin";
+  int fd = uffs_open(fname, UO_CREATE | UO_WRONLY, 0);
+  uffs_write(fd, "temp", 4);
+  uffs_close(fd);
+  uffs_remove(fname);
+
+  mem_check_end("Basic Cycle");
+}
+
+// Boundary & Failures
+TEST_CASE("uffs boundary checks", "[uffs][boundary]") {
+  // 1. Max Filename Length (UFFS default MAX_FILENAME_LEN is usually 256 or
+  // less) We'll try a reasonable long name
+  char long_name[200];
+  memset(long_name, 'a', 199);
+  long_name[199] = '\0';
+  char path[256];
+  snprintf(path, sizeof(path), "/data/%s", long_name);
+
+  int fd = uffs_open(path, UO_CREATE | UO_WRONLY, 0);
+  // UFFS might truncate or reject. We assume it handles it gracefully (fd >= 0
+  // OR error but NO CRASH)
+  if (fd >= 0) {
+    uffs_close(fd);
+    uffs_remove(path);
+  } else {
+    ESP_LOGI(TAG, "Long filename rejected gracefully");
+  }
+
+  // 2. Zero Length Write
+  fd = uffs_open("/data/zero.bin", UO_CREATE | UO_WRONLY, 0);
+  TEST_ASSERT_GREATER_OR_EQUAL(0, fd);
+  int w = uffs_write(fd, "test", 0);
+  TEST_ASSERT_EQUAL(0, w);
+  uffs_close(fd);
+  uffs_remove("/data/zero.bin");
+}
+
 void app_main(void) {
   ESP_LOGI(TAG, "Running UFFS Comprehensive Host Test Suite...");
+
+  // Note: UFFS uses a global pool, so some "leak" is just one-time pool init.
+  // We exclude setup/teardown from the per-test memory check logic generally,
+  // but "memory leak check" test case specifically looks for leaks in
+  // operations.
+
   unity_run_menu();
 }

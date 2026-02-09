@@ -71,18 +71,17 @@ esp_err_t spi_nand_wait_busy(spi_device_handle_t spi, uint32_t timeout_ms,
 esp_err_t spi_nand_write_enable(spi_device_handle_t spi);
 
 // Common UFFS Hooks (Generic implementation)
-int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
-                                    uint32_t page, uint8_t *data, int data_len,
+int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, u32 block,
+                                    u32 page, uint8_t *data, int data_len,
                                     uint8_t *ecc, uint8_t *spare,
                                     int spare_len);
 
-int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
-                                     uint32_t page, const uint8_t *data,
+int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, u32 block,
+                                     u32 page, const uint8_t *data,
                                      int data_len, const uint8_t *spare,
                                      int spare_len);
 
-int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
-                                      uint32_t block);
+int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev, u32 block);
 
 #ifdef __cplusplus
 }

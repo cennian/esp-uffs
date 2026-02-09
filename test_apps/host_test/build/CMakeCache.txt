@@ -18,24 +18,21 @@
 CCACHE_ENABLE:UNINITIALIZED=0
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
+CMAKE_ADDR2LINE:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-addr2line
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/usr/bin/ar
-
-//ASM compiler
-CMAKE_ASM_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_AR:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-ar
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
+CMAKE_ASM_COMPILER_AR:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib
 
-//Flags used by the ASM compiler during all build types.
-CMAKE_ASM_FLAGS:STRING=
+//ASM Compiler Base Flags
+CMAKE_ASM_FLAGS:STRING='-mlongcalls '
 
 //Flags used by the ASM compiler during DEBUG builds.
 CMAKE_ASM_FLAGS_DEBUG:STRING=-g
@@ -53,19 +50,16 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=
 
-//CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
-
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-13
+CMAKE_CXX_COMPILER_AR:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-13
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib
 
-//Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=
+//C++ Compiler Base Flags
+CMAKE_CXX_FLAGS:STRING=-mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -79,19 +73,16 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
-
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-13
+CMAKE_C_COMPILER_AR:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-13
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib
 
-//Flags used by the C compiler during all build types.
-CMAKE_C_FLAGS:STRING=
+//C Compiler Base Flags
+CMAKE_C_FLAGS:STRING=-mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
@@ -181,7 +172,7 @@ CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
 CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/usr/bin/ld
+CMAKE_LINKER:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-ld
 
 //Program used to build from build.ninja files.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/ninja
@@ -207,13 +198,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/usr/bin/nm
+CMAKE_NM:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
+CMAKE_OBJCOPY:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
+CMAKE_OBJDUMP:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -240,10 +231,10 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=1
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
+CMAKE_RANLIB:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/usr/bin/readelf
+CMAKE_READELF:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-readelf
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -293,10 +284,13 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/usr/bin/strip
+CMAKE_STRIP:FILEPATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-strip
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
+
+//The CMake toolchain file
+CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/ihtesham-ullah/esp/esp-idf/tools/cmake/toolchain-esp32.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -323,19 +317,13 @@ GEN_FILES:BOOL=
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
 //IDF Build Target
-IDF_TARGET:STRING=linux
+IDF_TARGET:STRING=esp32
 
 //IDF Build Toolchain Type
 IDF_TOOLCHAIN:STRING=gcc
 
 //Install Mbed TLS headers.
 INSTALL_MBEDTLS_HEADERS:BOOL=ON
-
-//Path to a library.
-LIBRT:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.a
-
-//Path to a library.
-LIB_BSD:FILEPATH=/usr/lib/x86_64-linux-gnu/libbsd.so
 
 //Explicitly link Mbed TLS library to pthread.
 LINK_WITH_PTHREAD:BOOL=OFF
@@ -386,19 +374,19 @@ esp-idf_IS_TOP_LEVEL:STATIC=OFF
 esp-idf_SOURCE_DIR:STATIC=/home/ihtesham-ullah/esp/esp-idf
 
 //Dependencies for the target
-everest_LIB_DEPENDS:STATIC=general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_linux;
+everest_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;
 
 //Dependencies for the target
-mbedcrypto_LIB_DEPENDS:STATIC=general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_linux;general;everest;general;p256m;
+mbedcrypto_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;general;everest;general;p256m;general;idf::esp_security;
 
 //Dependencies for the target
-mbedtls_LIB_DEPENDS:STATIC=general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_linux;general;mbedx509;
+mbedtls_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;general;mbedx509;
 
 //Dependencies for the target
-mbedx509_LIB_DEPENDS:STATIC=general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_linux;general;mbedcrypto;
+mbedx509_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;general;mbedcrypto;
 
 //Dependencies for the target
-p256m_LIB_DEPENDS:STATIC=general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_linux;
+p256m_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;
 
 //Value Computed by CMake
 test_host_uffs_BINARY_DIR:STATIC=/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build
@@ -418,8 +406,6 @@ test_host_uffs_SOURCE_DIR:STATIC=/home/ihtesham-ullah/Documents/Personal/ESP_UFF
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_ASM_COMPILER
-CMAKE_ASM_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ASM_COMPILER_AR
 CMAKE_ASM_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ASM_COMPILER_RANLIB
@@ -449,8 +435,6 @@ CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
-//ADVANCED property for variable: CMAKE_CXX_COMPILER
-CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
 CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
@@ -465,8 +449,6 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER
-CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
@@ -542,8 +524,6 @@ CMAKE_INSTALL_RUNSTATEDIR-ADVANCED:INTERNAL=1
 CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
 CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
-//Install .so files without execute permission.
-CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
 CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
@@ -563,7 +543,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=71
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=119
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -618,8 +598,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/ihtesham-ullah/.espressif/p
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-//linker supports push/pop state
-_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 //Compiler reason failure
@@ -628,12 +606,8 @@ _Python3_Compiler_REASON_FAILURE:INTERNAL=
 _Python3_Development_REASON_FAILURE:INTERNAL=
 _Python3_EXECUTABLE:INTERNAL=/home/ihtesham-ullah/.espressif/python_env/idf5.4_py3.12_env/bin/python
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;64;32;;cpython-312-x86_64-linux-gnu;abi3;/usr/lib/python3.12;/home/ihtesham-ullah/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12;/home/ihtesham-ullah/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages;/home/ihtesham-ullah/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;32;64;;;abi3;/usr/lib/python3.12;/home/ihtesham-ullah/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12;/home/ihtesham-ullah/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages;/home/ihtesham-ullah/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=18f010f3c18ba158d20ba10212274906
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
-//Test ver_gnu++2b_supported
-ver_gnu++2b_supported:INTERNAL=1
-//Test ver_gnu17_supported
-ver_gnu17_supported:INTERNAL=1
 

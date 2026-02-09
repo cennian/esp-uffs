@@ -1,0 +1,91 @@
+menu "ESP-UFFS Configuration"
+
+    config UFFS_MAX_PAGE_SIZE
+        int "Maximum Page Size (bytes)"
+        default 4096
+        help
+            Maximum page size supported by UFFS. 
+            Should be power of 2, e.g., 2048 or 4096.
+
+    config UFFS_MAX_CACHED_BLOCK_INFO
+        int "Max Cached Block Infos"
+        default 128
+        help
+            UFFS caches block info for opened objects. 
+            Reducing this saves RAM but may impact performance with many open files/dirs.
+            ESP32: 128 is recommended.
+
+    config UFFS_MAX_PAGE_BUFFERS
+        int "Max Page Buffers"
+        default 40
+        help
+            Number of page buffers for read/write cache.
+            Larger values improve performance but consume more RAM.
+            Formula: (sizeof(uffs_Buf) + page_size) * count.
+
+    config UFFS_CLONE_BUFFERS_THRESHOLD
+        int "Clone Buffers Threshold"
+        default 2
+        help
+            Reserve buffers for clone operations.
+            Should be >= 2 if Page Write Verify is enabled.
+
+    config UFFS_MAX_SPARE_BUFFERS
+        int "Max Spare Buffers"
+        default 5
+        help
+            Spare buffers used for lower level flash operations.
+
+    config UFFS_MAX_PENDING_BLOCKS
+        int "Max Pending Blocks"
+        default 4
+        help
+            Maximum pending bad blocks before processing.
+
+    config UFFS_MAX_DIRTY_PAGES_IN_A_BLOCK
+        int "Max Dirty Pages per Block"
+        default 10
+        help
+            Trigger flush when dirty pages in a block reach this number.
+
+    config UFFS_ENABLE_DEBUG_MSG
+        bool "Enable Debug Messages"
+        default y
+        help
+            Enable UFFS internal debug messages.
+            Requires calling uffs_InitDebugMessageOutput() in app.
+
+    choice UFFS_LOCKING_MODE
+        prompt "Locking Mode"
+        default UFFS_USE_GLOBAL_FS_LOCK
+        help
+            Select the locking mechanism for thread safety.
+
+        config UFFS_USE_GLOBAL_FS_LOCK
+            bool "Global FS Lock"
+            help
+                Use a single global lock for all UFFS operations.
+                Simple and thread-safe.
+
+        config UFFS_USE_PER_DEVICE_LOCK
+            bool "Per-Device Lock"
+            help
+                Use a lock per UFFS device.
+                Better concurrency if multiple UFFS partitions are used.
+    endchoice
+
+    config UFFS_PAGE_WRITE_VERIFY
+        bool "Page Write Verify"
+        default y
+        help
+            Verify data after writing to flash.
+            Recommended for NAND flash to ensure data integrity.
+
+    config UFFS_USE_SYSTEM_MEMORY_ALLOCATOR
+        bool "Use System Memory Allocator (malloc/free)"
+        default y
+        help
+            Use heap_caps_malloc / free for UFFS structures.
+            If disabled, UFFS uses its own static allocator (not recommended for ESP32).
+
+endmenu

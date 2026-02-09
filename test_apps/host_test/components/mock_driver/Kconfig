@@ -1,0 +1,13 @@
+menu "Mock Driver Configuration"
+
+    config MOCK_FLASH_SIZE_BLOCKS
+        int "Mock Flash Size (Blocks)"
+        default 1024 if SPIRAM
+        default 128
+        help
+            Number of blocks to simulate in the mock SPI NAND driver.
+            Each block consumes memory for the sparse pointer array.
+            ESP32-S3 (with more RAM) can support larger mock flash.
+            ESP32/C3 should use smaller values (e.g., 128) to avoid running out of RAM.
+
+endmenu

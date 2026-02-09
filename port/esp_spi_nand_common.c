@@ -76,8 +76,8 @@ esp_err_t spi_nand_write_enable(spi_device_handle_t spi) {
 }
 
 // Geneirc implementations adapted from original uffs_spi_nand_read_page
-int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
-                                    uint32_t page, uint8_t *data, int data_len,
+int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, u32 block,
+                                    u32 page, uint8_t *data, int data_len,
                                     uint8_t *ecc, uint8_t *spare,
                                     int spare_len) {
   spi_nand_priv_t *priv = (spi_nand_priv_t *)dev->attr->_private;
@@ -139,8 +139,8 @@ int uffs_spi_nand_read_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
   return ecc_res;
 }
 
-int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
-                                     uint32_t page, const uint8_t *data,
+int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, u32 block,
+                                     u32 page, const uint8_t *data,
                                      int data_len, const uint8_t *spare,
                                      int spare_len) {
   spi_nand_priv_t *priv = (spi_nand_priv_t *)dev->attr->_private;
@@ -218,8 +218,7 @@ int uffs_spi_nand_write_page_generic(struct uffs_DeviceSt *dev, uint32_t block,
   return UFFS_FLASH_NO_ERR;
 }
 
-int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev,
-                                      uint32_t block) {
+int uffs_spi_nand_erase_block_generic(struct uffs_DeviceSt *dev, u32 block) {
   spi_nand_priv_t *priv = (spi_nand_priv_t *)dev->attr->_private;
   uint32_t page_addr = block * priv->block_size; // Row address is page index
 

@@ -41,11 +41,9 @@ static int uffs_winbond_release_flash(struct uffs_DeviceSt *dev) { return 0; }
 // Winbond uses generic implementation for read/write
 // But if specific ECC handling is needed, overrides go here.
 
-static int
-uffs_winbond_write_page_with_layout(struct uffs_DeviceSt *dev, uint32_t block,
-                                    uint32_t page, const uint8_t *data,
-                                    int data_len, const uint8_t *ecc,
-                                    const struct uffs_TagStoreSt *ts) {
+static int uffs_winbond_write_page_with_layout(
+    struct uffs_DeviceSt *dev, u32 block, u32 page, const uint8_t *data,
+    int data_len, const uint8_t *ecc, const struct uffs_TagStoreSt *ts) {
   uint8_t spare[64];
   memset(spare, 0xFF, sizeof(spare));
 
@@ -80,7 +78,11 @@ esp_err_t uffs_spi_nand_init_winbond(struct uffs_DeviceSt *dev,
   priv->page_size = 2048;
   priv->spare_size = 64;
   priv->block_size = 64;
-  priv->total_blocks = 1024;
+#ifdef CONFIG_MOCK_FLASH_SIZE_BLOCKS
+  priv->total_blocks = CONFIG_MOCK_FLASH_SIZE_BLOCKS;
+#else
+  priv->total_blocks = 1024; // Standard W25N01GV size
+#endif
 
   attr->page_data_size = priv->page_size;
   attr->pages_per_block = priv->block_size;

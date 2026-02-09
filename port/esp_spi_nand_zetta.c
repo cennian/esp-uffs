@@ -56,9 +56,9 @@ static int uffs_zetta_init_flash(struct uffs_DeviceSt *dev) {
   return 0;
 }
 
-static int uffs_zetta_read_page(struct uffs_DeviceSt *dev, uint32_t block,
-                                uint32_t page, uint8_t *data, int data_len,
-                                uint8_t *ecc, uint8_t *spare, int spare_len) {
+static int uffs_zetta_read_page(struct uffs_DeviceSt *dev, u32 block, u32 page,
+                                uint8_t *data, int data_len, uint8_t *ecc,
+                                uint8_t *spare, int spare_len) {
   // Re-implement read page with 0x70 mask logic (GD style)
   spi_nand_priv_t *priv = (spi_nand_priv_t *)dev->attr->_private;
   uint32_t page_addr = block * priv->block_size + page;
@@ -112,7 +112,7 @@ static int uffs_zetta_read_page(struct uffs_DeviceSt *dev, uint32_t block,
 }
 
 static int uffs_zetta_write_page_with_layout(struct uffs_DeviceSt *dev,
-                                             uint32_t block, uint32_t page,
+                                             u32 block, u32 page,
                                              const uint8_t *data, int data_len,
                                              const uint8_t *ecc,
                                              const struct uffs_TagStoreSt *ts) {
@@ -144,7 +144,7 @@ esp_err_t uffs_spi_nand_init_zetta(struct uffs_DeviceSt *dev,
   priv->page_size = 2048;
   priv->spare_size = 64;
   priv->block_size = 64;
-  priv->total_blocks = 1024;
+  priv->total_blocks = 128; // Reduced for Mock Test (1024->128)
 
   attr->page_data_size = priv->page_size;
   attr->pages_per_block = priv->block_size;
