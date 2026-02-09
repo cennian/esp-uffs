@@ -40,16 +40,19 @@ This component uses the standard `spi_master` driver, making it compatible with 
 
 ### 1. Installation
 
-**Note**: This component is not yet registered in the Espressif Component Registry. Please install it manually.
-
-**Option A: Clone as Submodule** (Recommended)
+**Option A: From Component Registry** (Recommended)
+You can install this component directly from the Espressif Component Registry:
 ```bash
-cd your_project/components
-git submodule add https://github.com/your_username/esp-uffs.git uffs
-# (Replace with your actual repository URL)
+idf.py add-dependency "cennian/esp-uffs^0.1.0"
 ```
 
-**Option B: Copy Source**
+**Option B: Clone as Submodule** (Alternative)
+```bash
+cd your_project/components
+git submodule add https://github.com/cennian/esp-uffs.git uffs
+```
+
+**Option C: Copy Source**
 Copy the entire `uffs` folder into your project's `components/` directory.
 
 ### 2. Initialization
