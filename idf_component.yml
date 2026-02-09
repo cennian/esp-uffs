@@ -21,5 +21,6 @@ targets:
   - esp32c6
   - esp32h2
   - esp32p4
+  - linux
 dependencies:
   idf: ">=5.0"

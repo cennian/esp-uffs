@@ -1,5 +1,8 @@
+#include "esp_heap_caps.h"
 #include "esp_log.h"
 #include "esp_spi_nand.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 #include "uffs/uffs.h"
 #include "uffs/uffs_fd.h"
 #include "uffs/uffs_mtb.h"
@@ -360,7 +363,7 @@ static void mem_check_end(const char *msg) {
   // Strict leak means significant loss.
   int diff = (int)free_mem_start - (int)free_mem_end;
   ESP_LOGI(TAG, "Memory Check [%s]: Start %d, End %d, Diff %d", msg,
-           free_mem_start, free_mem_end, diff);
+           (int)free_mem_start, (int)free_mem_end, diff);
   // Warning only for now as frameworks often have tiny one-time allocs
   if (diff > 1024) {
     ESP_LOGW(TAG, "POTENTIAL LEAK DETECTED in %s!", msg);
@@ -407,6 +410,23 @@ TEST_CASE("uffs boundary checks", "[uffs][boundary]") {
   TEST_ASSERT_EQUAL(0, w);
   uffs_close(fd);
   uffs_remove("/data/zero.bin");
+}
+
+TEST_CASE("runtime flash size check", "[uffs][init]") {
+  if (uffs_dev.attr) {
+    ESP_LOGI(TAG, "Runtime Detected Flash Size: %d Blocks (%d MB)",
+             uffs_dev.attr->total_blocks,
+             (uffs_dev.attr->total_blocks * uffs_dev.attr->pages_per_block *
+              uffs_dev.attr->page_data_size) /
+                 (1024 * 1024));
+
+    // Basic assertion to ensure we are getting expected values (either 128 or
+    // 1024)
+    TEST_ASSERT_TRUE(uffs_dev.attr->total_blocks == 128 ||
+                     uffs_dev.attr->total_blocks == 1024);
+  } else {
+    TEST_FAIL_MESSAGE("Device attributes not initialized!");
+  }
 }
 
 void app_main(void) {

@@ -11,19 +11,15 @@
 
 #define TAG "MOCK_SPI"
 
-// Use Kconfig value or default to safe small size
-#ifdef CONFIG_MOCK_FLASH_SIZE_BLOCKS
-#define TOTAL_BLOCKS CONFIG_MOCK_FLASH_SIZE_BLOCKS
-#else
-#define TOTAL_BLOCKS 128
-#endif
+// MOCK_TOTAL_BLOCKS is now a variable, checking PSRAM at runtime
+static int mock_total_blocks = 128; // Default safe value
+#define TOTAL_BLOCKS mock_total_blocks
 
 // Mock Flash Parameters
 #define MOCK_PAGE_SIZE 2048
 #define MOCK_SPARE_SIZE 64
 #define MOCK_PAGES_PER_BLOCK 64
-#define MOCK_TOTAL_BLOCKS                                                      \
-  TOTAL_BLOCKS // Use the Kconfig-defined or default TOTAL_BLOCKS
+#define MOCK_TOTAL_BLOCKS mock_total_blocks
 #define MOCK_CACHE_SIZE (MOCK_PAGE_SIZE + MOCK_SPARE_SIZE)
 
 // Commands
@@ -47,8 +43,8 @@ typedef struct {
 
 // Sparse array of Block pointers.
 // flash_mem[block] is a pointer to an array of page pointers.
-// 1024 blocks * 4 bytes = 4KB RAM usage (Static)
-static mock_page_t **flash_mem[MOCK_TOTAL_BLOCKS];
+// Will be allocated at runtime based on PSRAM availability
+static mock_page_t ***flash_mem = NULL;
 
 static uint8_t page_cache[MOCK_CACHE_SIZE];
 static uint8_t status_reg = 0;
@@ -57,7 +53,32 @@ static int data_input_mode = 0; // 0: None, 1: Expecting Data
 static uint16_t current_col_addr = 0;
 uint8_t mock_mfr_id = 0xEF; // Default to Winbond
 
+// Helper to init memory if not already done
+static void mock_spi_init_mem(void) {
+  if (flash_mem)
+    return;
+
+  // Check for PSRAM availability (1MB threshold arbitrary but safe)
+  if (heap_caps_get_free_size(MALLOC_CAP_SPIRAM) > 1024 * 1024) {
+    mock_total_blocks = 1024; // 128MB Flash
+    ESP_LOGI(TAG, "PSRAM Detected: Setting Mock Flash to %d Blocks (128MB)",
+             mock_total_blocks);
+  } else {
+    mock_total_blocks = 128; // 16MB Flash
+    ESP_LOGI(TAG, "No PSRAM: Setting Mock Flash to %d Blocks (16MB)",
+             mock_total_blocks);
+  }
+
+  flash_mem = calloc(mock_total_blocks, sizeof(mock_page_t **));
+  if (!flash_mem) {
+    ESP_LOGE(TAG, "Critical: Failed to allocate mock flash block table!");
+    abort();
+  }
+}
+
 void mock_nand_reset(void) {
+  mock_spi_init_mem(); // Ensure memory is initialized
+
   for (int b = 0; b < MOCK_TOTAL_BLOCKS; b++) {
     if (flash_mem[b]) {
       for (int p = 0; p < MOCK_PAGES_PER_BLOCK; p++) {

@@ -4,24 +4,29 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
-      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:564 (__project)"
-      - "CMakeLists.txt:5 (project)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:167 (enable_language)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
     message: |
-      The target system is: Generic -  - 
-      The host system is: Linux - 6.14.0-37-generic - x86_64
+      The system is: Linux - 6.14.0-37-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:564 (__project)"
-      - "CMakeLists.txt:5 (project)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:167 (enable_language)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc 
-      Build flags: -mlongcalls;-fno-builtin-memcpy;-fno-builtin-memset;-fno-builtin-bzero;-fno-builtin-stpcpy;-fno-builtin-strncpy
+      Compiler: /usr/bin/cc 
+      Build flags: 
       Id flags:  
       
       The output was:
@@ -39,12 +44,15 @@ events:
       - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:564 (__project)"
-      - "CMakeLists.txt:5 (project)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:167 (enable_language)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ 
-      Build flags: -mlongcalls;-fno-builtin-memcpy;-fno-builtin-memset;-fno-builtin-bzero;-fno-builtin-stpcpy;-fno-builtin-strncpy
+      Compiler: /usr/bin/c++ 
+      Build flags: 
       Id flags:  
       
       The output was:
@@ -57,6 +65,551 @@ events:
         /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
       
   -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:167 (enable_language)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-xiUdzL"
+      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-xiUdzL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ihtesham-ullah/esp/esp-idf/tools/cmake;/home/ihtesham-ullah/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-xiUdzL'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_65fa7
+        [1/2] /usr/bin/cc   -v -o CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_65fa7.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_65fa7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccZHL8ql.s
+        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 38987c28e967c64056a6454abdef726e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_65fa7.dir/'
+         as -v --64 -o CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o /tmp/ccZHL8ql.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o -o cmTC_65fa7   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65fa7' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_65fa7.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cccuXhgB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_65fa7 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65fa7' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_65fa7.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:167 (enable_language)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:167 (enable_language)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-xiUdzL']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_65fa7]
+        ignore line: [[1/2] /usr/bin/cc   -v -o CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_65fa7.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_65fa7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccZHL8ql.s]
+        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_65fa7.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o /tmp/ccZHL8ql.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o -o cmTC_65fa7   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65fa7' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_65fa7.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cccuXhgB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_65fa7 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cccuXhgB.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_65fa7] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_65fa7.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:167 (enable_language)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-2CBzuK"
+      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-2CBzuK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ihtesham-ullah/esp/esp-idf/tools/cmake;/home/ihtesham-ullah/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-2CBzuK'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_9aecd
+        [1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9aecd.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9aecd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cciIZaaY.s
+        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: c81c05345ce537099dafd5580045814a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9aecd.dir/'
+         as -v --64 -o CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cciIZaaY.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/c++  -v CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9aecd   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9aecd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9aecd.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFYzDfA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9aecd /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9aecd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9aecd.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:167 (enable_language)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:167 (enable_language)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-2CBzuK']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_9aecd]
+        ignore line: [[1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9aecd.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9aecd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cciIZaaY.s]
+        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9aecd.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cciIZaaY.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/c++  -v CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9aecd   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9aecd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9aecd.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFYzDfA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9aecd /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccFYzDfA.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9aecd] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_9aecd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:173 (check_c_compiler_flag)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
+    checks:
+      - "Performing Test ver_gnu17_supported"
+    directories:
+      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-FJFBwh"
+      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-FJFBwh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ihtesham-ullah/esp/esp-idf/tools/cmake;/home/ihtesham-ullah/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "ver_gnu17_supported"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-FJFBwh'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_de25d
+        [1/2] /usr/bin/cc -Dver_gnu17_supported  -std=gnu17 -o CMakeFiles/cmTC_de25d.dir/src.c.o -c /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-FJFBwh/src.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_de25d.dir/src.c.o -o cmTC_de25d   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:188 (check_cxx_compiler_flag)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/build.cmake:244 (__build_set_lang_version)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)"
+      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
+    checks:
+      - "Performing Test ver_gnu++2b_supported"
+    directories:
+      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-viSogB"
+      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-viSogB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ihtesham-ullah/esp/esp-idf/tools/cmake;/home/ihtesham-ullah/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "ver_gnu++2b_supported"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-viSogB'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_76c02
+        [1/2] /usr/bin/c++   -Dver_gnu++2b_supported -std=gnu++2b -o CMakeFiles/cmTC_76c02.dir/src.cxx.o -c /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-viSogB/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        [2/2] : && /usr/bin/c++   CMakeFiles/cmTC_76c02.dir/src.cxx.o -o cmTC_76c02   && :
+        
+      exitCode: 0
+  -
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
@@ -65,432 +618,10 @@ events:
       - "CMakeLists.txt:5 (project)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
-      xtensa-esp-elf-gcc (crosstool-NG esp-14.2.0_20240906) 14.2.0
-      Copyright (C) 2024 Free Software Foundation, Inc.
+      cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+      Copyright (C) 2023 Free Software Foundation, Inc.
       This is free software; see the source for copying conditions.  There is NO
       warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:564 (__project)"
-      - "CMakeLists.txt:5 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-2FfZzG"
-      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-2FfZzG"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "-mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/ihtesham-ullah/esp/esp-idf/tools/cmake;/home/ihtesham-ullah/esp/esp-idf/tools/cmake/third_party"
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-2FfZzG'
-        
-        Run Build Command(s): /usr/bin/ninja -v cmTC_605bc
-        [1/2] /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        COLLECT_GCC=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
-        Target: xtensa-esp-elf
-        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20240906' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20240906) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_605bc.dir/'
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_605bc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccE7Vc8S.s
-        GNU C17 (crosstool-NG esp-14.2.0_20240906) version 14.2.0 (xtensa-esp-elf)
-        	compiled by GNU C version 4.9.2, GMP version 6.2.1, MPFR version 4.2.1, MPC version 1.2.1, isl version isl-0.26-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/include"
-        ignoring nonexistent directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include"
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed"
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include"
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
-        End of search list.
-        Compiler executable checksum: fdc307504a0b8689048d7fe021921113
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_605bc.dir/'
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj /tmp/ccE7Vc8S.s
-        COMPILER_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
-        LIBRARY_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj -o cmTC_605bc   && :
-        Using built-in specs.
-        COLLECT_GCC=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
-        COLLECT_LTO_WRAPPER=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper
-        Target: xtensa-esp-elf
-        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20240906' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20240906) 
-        COMPILER_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
-        LIBRARY_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_605bc' '-dumpdir' 'cmTC_605bc.'
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccL5Ntmw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_605bc /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_605bc' '-dumpdir' 'cmTC_605bc.'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:564 (__project)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include]
-          add: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed]
-          add: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
-        end of search list found
-        collapse include dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include]
-        collapse include dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include-fixed]
-        collapse include dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include]
-        implicit include dirs: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include-fixed;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:564 (__project)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(xtensa-esp32s3-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-2FfZzG']
-        ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_605bc]
-        ignore line: [[1/2] /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
-        ignore line: [Target: xtensa-esp-elf]
-        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20240906' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20240906) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_605bc.dir/']
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_605bc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccE7Vc8S.s]
-        ignore line: [GNU C17 (crosstool-NG esp-14.2.0_20240906) version 14.2.0 (xtensa-esp-elf)]
-        ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.2.1  MPFR version 4.2.1  MPC version 1.2.1  isl version isl-0.26-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/include"]
-        ignore line: [ignoring nonexistent directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include"]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed"]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include"]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include]
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed]
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: fdc307504a0b8689048d7fe021921113]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_605bc.dir/']
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj /tmp/ccE7Vc8S.s]
-        ignore line: [COMPILER_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
-        ignore line: [LIBRARY_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj -o cmTC_605bc   && :]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
-        ignore line: [COLLECT_LTO_WRAPPER=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper]
-        ignore line: [Target: xtensa-esp-elf]
-        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20240906' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20240906) ]
-        ignore line: [COMPILER_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
-        ignore line: [LIBRARY_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_605bc' '-dumpdir' 'cmTC_605bc.']
-        link line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccL5Ntmw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_605bc /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccL5Ntmw.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [--sysroot=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
-          arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_605bc] ==> ignore
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [CMakeFiles/cmTC_605bc.dir/CMakeCCompilerABI.c.obj] ==> ignore
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lc] ==> lib [c]
-          arg [-lnosys] ==> lib [nosys]
-          arg [-lc] ==> lib [c]
-          arg [-lgcc] ==> lib [gcc]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/usr/lib]
-        implicit libs: [gcc;c;nosys;c;gcc]
-        implicit objs: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-        implicit dirs: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/usr/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:564 (__project)"
-      - "CMakeLists.txt:5 (project)"
-    checks:
-      - "Detecting CXX compiler ABI info"
-    directories:
-      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-FvFzGV"
-      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-FvFzGV"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "-mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/ihtesham-ullah/esp/esp-idf/tools/cmake;/home/ihtesham-ullah/esp/esp-idf/tools/cmake/third_party"
-    buildResult:
-      variable: "CMAKE_CXX_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-FvFzGV'
-        
-        Run Build Command(s): /usr/bin/ninja -v cmTC_68ff7
-        [1/2] /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
-        Using built-in specs.
-        COLLECT_GCC=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp-elf-g++
-        Target: xtensa-esp-elf
-        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20240906' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20240906) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_68ff7.dir/'
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_68ff7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccwZc2UV.s
-        GNU C++17 (crosstool-NG esp-14.2.0_20240906) version 14.2.0 (xtensa-esp-elf)
-        	compiled by GNU C version 4.9.2, GMP version 6.2.1, MPFR version 4.2.1, MPC version 1.2.1, isl version isl-0.26-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0"
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/xtensa-esp-elf/esp32s3"
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/backward"
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/include"
-        ignoring nonexistent directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include"
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed"
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include"
-        ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/xtensa-esp-elf/esp32s3
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/backward
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
-        End of search list.
-        Compiler executable checksum: a8299525757d1c4ecfaaa6880b6ceb8e
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_68ff7.dir/'
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccwZc2UV.s
-        COMPILER_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
-        LIBRARY_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_68ff7   && :
-        Using built-in specs.
-        COLLECT_GCC=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp-elf-g++
-        COLLECT_LTO_WRAPPER=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper
-        Target: xtensa-esp-elf
-        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20240906' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20240906) 
-        COMPILER_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
-        LIBRARY_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_68ff7' '-dumpdir' 'cmTC_68ff7.'
-         /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQPn4CM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_68ff7 /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_68ff7' '-dumpdir' 'cmTC_68ff7.'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:564 (__project)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed CXX implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0]
-          add: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/xtensa-esp-elf/esp32s3]
-          add: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/backward]
-          add: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include]
-          add: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed]
-          add: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
-        end of search list found
-        collapse include dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0]
-        collapse include dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/xtensa-esp-elf/esp32s3] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/xtensa-esp-elf/esp32s3]
-        collapse include dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/backward] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/backward]
-        collapse include dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include]
-        collapse include dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include-fixed]
-        collapse include dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include]
-        implicit include dirs: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/xtensa-esp-elf/esp32s3;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/backward;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include-fixed;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "/home/ihtesham-ullah/esp/esp-idf/tools/cmake/project.cmake:564 (__project)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(xtensa-esp32s3-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-FvFzGV']
-        ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_68ff7]
-        ignore line: [[1/2] /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
-        ignore line: [Target: xtensa-esp-elf]
-        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20240906' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20240906) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_68ff7.dir/']
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_68ff7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccwZc2UV.s]
-        ignore line: [GNU C++17 (crosstool-NG esp-14.2.0_20240906) version 14.2.0 (xtensa-esp-elf)]
-        ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.2.1  MPFR version 4.2.1  MPC version 1.2.1  isl version isl-0.26-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0"]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/xtensa-esp-elf/esp32s3"]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/backward"]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/include"]
-        ignore line: [ignoring nonexistent directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include"]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed"]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include"]
-        ignore line: [ignoring duplicate directory "/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0]
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/xtensa-esp-elf/esp32s3]
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include/c++/14.2.0/backward]
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include]
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/include-fixed]
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: a8299525757d1c4ecfaaa6880b6ceb8e]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_68ff7.dir/']
-        ignore line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccwZc2UV.s]
-        ignore line: [COMPILER_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
-        ignore line: [LIBRARY_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_68ff7   && :]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
-        ignore line: [COLLECT_LTO_WRAPPER=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper]
-        ignore line: [Target: xtensa-esp-elf]
-        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20240906' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20240906) ]
-        ignore line: [COMPILER_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
-        ignore line: [LIBRARY_PATH=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_68ff7' '-dumpdir' 'cmTC_68ff7.']
-        link line: [ /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQPn4CM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_68ff7 /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccQPn4CM.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [--sysroot=/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
-          arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_68ff7] ==> ignore
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
-          arg [-L/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [CMakeFiles/cmTC_68ff7.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
-          arg [-lstdc++] ==> lib [stdc++]
-          arg [-lm] ==> lib [m]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lc] ==> lib [c]
-          arg [-lnosys] ==> lib [nosys]
-          arg [-lc] ==> lib [c]
-          arg [-lgcc] ==> lib [gcc]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o]
-          arg [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o] ==> obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o]
-        collapse obj [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib]
-        collapse library dir [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/usr/lib]
-        implicit libs: [stdc++;m;gcc;c;nosys;c;gcc]
-        implicit objs: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-        implicit dirs: [/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/lib;/home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/usr/lib]
-        implicit fwks: []
-      
       
   -
     kind: "try_compile-v1"
@@ -503,10 +634,10 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-djzrwa"
-      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-djzrwa"
+      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-gFH9zJ"
+      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-gFH9zJ"
     cmakeVariables:
-      CMAKE_C_FLAGS: "-mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy"
+      CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/ihtesham-ullah/esp/esp-idf/tools/cmake;/home/ihtesham-ullah/esp/esp-idf/tools/cmake/third_party"
@@ -514,17 +645,11 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-djzrwa'
+        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-gFH9zJ'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_dbc3e
-        [1/2] /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DCMAKE_HAVE_LIBC_PTHREAD  -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o CMakeFiles/cmTC_dbc3e.dir/src.c.obj -c /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-djzrwa/src.c
-        [2/2] : && /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy  CMakeFiles/cmTC_dbc3e.dir/src.c.obj -o cmTC_dbc3e   && :
-        /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_dbc3e.dir/src.c.obj:(.literal+0x14): warning: pthread_atfork is not implemented and will always fail
-        /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_dbc3e.dir/src.c.obj:(.literal+0xc): warning: pthread_cancel is not implemented and will always fail
-        /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_dbc3e.dir/src.c.obj:(.literal+0x4): warning: pthread_create is not implemented and will always fail
-        /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_dbc3e.dir/src.c.obj:(.literal+0x8): warning: pthread_detach is not implemented and will always fail
-        /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_dbc3e.dir/src.c.obj:(.literal+0x18): warning: pthread_exit is not implemented and will always fail
-        /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_dbc3e.dir/src.c.obj:(.literal+0x10): warning: pthread_join is not implemented and will always fail
+        Run Build Command(s): /usr/bin/ninja -v cmTC_eb659
+        [1/2] /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_eb659.dir/src.c.o -c /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-gFH9zJ/src.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_eb659.dir/src.c.o -o cmTC_eb659   && :
         
       exitCode: 0
   -
@@ -537,10 +662,10 @@ events:
     checks:
       - "Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
     directories:
-      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-06jjfT"
-      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-06jjfT"
+      source: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-3sPTok"
+      binary: "/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-3sPTok"
     cmakeVariables:
-      CMAKE_C_FLAGS: "-mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow"
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow"
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "/home/ihtesham-ullah/esp/esp-idf/tools/cmake;/home/ihtesham-ullah/esp/esp-idf/tools/cmake/third_party"
@@ -548,11 +673,11 @@ events:
       variable: "C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
       cached: true
       stdout: |
-        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-06jjfT'
+        Change Dir: '/home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-3sPTok'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_85f07
-        [1/2] /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow    -Wformat-signedness -o CMakeFiles/cmTC_85f07.dir/src.c.obj -c /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-06jjfT/src.c
-        [2/2] : && /home/ihtesham-ullah/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow  CMakeFiles/cmTC_85f07.dir/src.c.obj -o cmTC_85f07   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_d4bf9
+        [1/2] /usr/bin/cc -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow    -Wformat-signedness -o CMakeFiles/cmTC_d4bf9.dir/src.c.o -c /home/ihtesham-ullah/Documents/Personal/ESP_UFFS/components/uffs/test_apps/host_test/build/CMakeFiles/CMakeScratch/TryCompile-3sPTok/src.c
+        [2/2] : && /usr/bin/cc -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow  CMakeFiles/cmTC_d4bf9.dir/src.c.o -o cmTC_d4bf9   && :
         
       exitCode: 0
 ...

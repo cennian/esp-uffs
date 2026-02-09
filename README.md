@@ -98,6 +98,25 @@ void app_main(void) {
 }
 ```
 
+
+## Configuration (Kconfig)
+
+ESP-UFFS is fully configurable via `idf.py menuconfig`. Navigate to **Component config -> ESP-UFFS Configuration**.
+
+| Option | Default | Description |
+| :--- | :--- | :--- |
+| `UFFS_MAX_PAGE_SIZE` | 4096 | Max supported page size (bytes). Power of 2 (e.g., 2048, 4096). |
+| `UFFS_MAX_CACHED_BLOCK_INFO` | 128 | Max block infos cached in RAM. Affects performance vs memory usage. |
+| `UFFS_MAX_PAGE_BUFFERS` | 40 | Number of page buffers for read/write cache. Higher = better perf. |
+| `UFFS_CLONE_BUFFERS_THRESHOLD` | 2 | Reserved buffers for clone operations. Keep >= 2 if verify enabled. |
+| `UFFS_MAX_SPARE_BUFFERS` | 5 | Spare buffers for low-level flash ops. |
+| `UFFS_MAX_PENDING_BLOCKS` | 4 | Max pending bad blocks before processing. |
+| `UFFS_MAX_DIRTY_PAGES_IN_A_BLOCK`| 10 | Trigger flush when dirty pages reach this count. |
+| `UFFS_ENABLE_DEBUG_MSG` | Yes | Enable internal UFFS debug logging. |
+| `UFFS_LOCKING_MODE` | Global | **Global FS Lock** (simpler) or **Per-Device Lock** (concurrency). |
+| `UFFS_PAGE_WRITE_VERIFY` | Yes | Verify data immediately after writing (highly recommended for NAND). |
+| `UFFS_USE_SYSTEM_MEMORY_ALLOCATOR`| Yes | Use ESP-IDF heap (`malloc`/`free`) instead of UFFS static allocator. |
+
 ### Dos and Don'ts
 
 *   **DO** ensure your SPI bus `max_transfer_sz` is at least the size of a NAND page + spare (typically ~2112 bytes).

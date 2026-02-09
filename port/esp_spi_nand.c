@@ -15,6 +15,7 @@
  */
 
 #include "esp_spi_nand.h"
+#include "esp_heap_caps.h" // For runtime mock sizing check
 #include "esp_log.h"
 #include "esp_spi_nand_common.h"
 #include "esp_spi_nand_types.h"
@@ -75,7 +76,12 @@ esp_err_t uffs_spi_nand_init_generic(struct uffs_DeviceSt *dev,
   priv->block_size = 64;
   priv->block_size = 64;
 #ifdef CONFIG_MOCK_FLASH_SIZE_BLOCKS
-  priv->total_blocks = CONFIG_MOCK_FLASH_SIZE_BLOCKS;
+  // Runtime check matches mock driver logic
+  if (heap_caps_get_free_size(MALLOC_CAP_SPIRAM) > 1024 * 1024) {
+    priv->total_blocks = 1024;
+  } else {
+    priv->total_blocks = 128;
+  }
 #else
   priv->total_blocks = 1024; // Generic fallback size
 #endif
