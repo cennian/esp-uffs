@@ -46,6 +46,7 @@ This component uses the standard `spi_master` driver, making it compatible with 
 ```bash
 cd your_project/components
 git submodule add https://github.com/your_username/esp-uffs.git uffs
+# (Replace with your actual repository URL)
 ```
 
 **Option B: Copy Source**
@@ -123,6 +124,24 @@ ESP-UFFS is fully configurable via `idf.py menuconfig`. Navigate to **Component 
 *   **DO** use the `esp_uffs_spi_nand_init` helper; it automatically detects the flash vendor and loads the correct ECC/Block-locking logic.
 *   **DON'T** share the SPI bus with high-frequency interrupt-driven devices (like screens) without careful transaction management, as NAND operations can be blocking.
 *   **DON'T** format the chip unnecessarily; UFFS will attempt to mount existing data. Explicitly call `uffs_Format` only if mounting fails or you want a clean slate.
+
+## Comparison with Other Filesystems
+
+| Feature | **ESP-UFFS** | **FATFS + SPI NAND Driver** | **LittleFS** |
+| :--- | :--- | :--- | :--- |
+| **Design Target** | **Raw NAND Flash** (Native) | General Purpose (requires FTL*) | NOR Flash / Small NAND |
+| **Overhead** | **Low**. Designed for NAND pages/blocks. | **High**. Requires **Dhara FTL** or similar to translate sectors to pages. | Low to Medium. |
+| **Wear Leveling** | **Native & Robust**. Dynamic & Static wear leveling built-in. | Dependent on FTL implementation (Dhara is good, but complex). | Dynamic. |
+| **Power Safety** | **High**. Journaling and atomic operations designed for unstable power. | Medium. FAT table backup helps, but FTL layer adds complexity. | **High**. COW features. |
+| **Write Perf** | **High**. Direct page writes. | Medium/Low. FTL overhead for small writes (Read-Modify-Write). | Medium. |
+| **RAM Usage** | Tunable (e.g., ~10-20KB). | High (FATFS + FTL metadata + Buffers). | Very Low. |
+
+*\*FTL = Flash Translation Layer (e.g., Dhara) is required to make NAND look like a block device (SD Card) for FATFS.*
+
+**Choose ESP-UFFS if:**
+*   You are using **Raw SPI NAND** (Winbond W25N, GD5F, etc.).
+*   You need **high reliability** and **power-fail safety** without the complexity of an external FTL.
+*   You want a solution lighter than FATFS+Dhara but more robust for NAND than vanilla LittleFS.
 
 ## Benchmarks
 

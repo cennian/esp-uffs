@@ -10,3 +10,7 @@ sdkconfig.old
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Test artifacts
+.cache/
+dependencies.lock
